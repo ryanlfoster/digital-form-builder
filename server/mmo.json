@@ -11,7 +11,7 @@
     "incineration": "Incineration"
   },
   "pages": {
-    "/activity-location": {
+    "/": {
       "title": "Where will your activity take place?",
       "section": "checkBeforeStart",
       "name": "location",

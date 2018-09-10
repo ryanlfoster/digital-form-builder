@@ -39,7 +39,7 @@
   ],
   "pages": [
     {
-      "path": "/activity-location",
+      "path": "/",
       "section": "checkBeforeStart",
       "components": [
         {
@@ -765,7 +765,7 @@
   "lists": [
     {
       "name": "_1",
-      "title": "List for page /activity-location",
+      "title": "List for page /",
       "type": "string",
       "items": [
         {
