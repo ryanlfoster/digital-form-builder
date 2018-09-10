@@ -88,7 +88,7 @@ module.exports = (mmoData) => {
         // HTML
         page.components.push({
           type: component.type || 'Html',
-          content: component.html
+          content: !component.type ? `<div class="govuk-prose-scope">${component.html}</div>` : component.html
         })
       }
     })
@@ -136,8 +136,6 @@ module.exports = (mmoData) => {
   // })
 
   // fs.writeFileSync(output, JSON.stringify(o2, null, 2))
-
-  console.log(converted)
 
   return converted
 }

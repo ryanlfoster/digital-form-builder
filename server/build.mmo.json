@@ -75,7 +75,7 @@
       "components": [
         {
           "type": "Html",
-          "content": "Based on the information provided a licence is not required for the activity."
+          "content": "<div class=\"govuk-prose-scope\">Based on the information provided a licence is not required for the activity.</div>"
         }
       ],
       "title": "Licence is not required"
@@ -85,7 +85,7 @@
       "components": [
         {
           "type": "Html",
-          "content": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 19 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "content": "<div class=\"govuk-prose-scope\">Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 19 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken.</div>"
         }
       ],
       "title": "Licence is not required"
@@ -95,7 +95,7 @@
       "components": [
         {
           "type": "Html",
-          "content": "Based on the information provided the activity does not require a marine licence from the MMO but you may require a marine licence from the relevant devolved administration."
+          "content": "<div class=\"govuk-prose-scope\">Based on the information provided the activity does not require a marine licence from the MMO but you may require a marine licence from the relevant devolved administration.</div>"
         }
       ],
       "title": "Licence not required"
@@ -105,7 +105,7 @@
       "components": [
         {
           "type": "Html",
-          "content": "Based on the information provided the activity requires a\r\nlicence. No exemption is available and the activity is not suitable for self-service licensing.\r\n<br>\r\n<br>\r\n<a href=\"#\">Apply for a marine licence</a>"
+          "content": "<div class=\"govuk-prose-scope\">Based on the information provided the activity requires a\r\nlicence. No exemption is available and the activity is not suitable for self-service licensing.\r\n<br>\r\n<br>\r\n<a href=\"#\">Apply for a marine licence</a></div>"
         }
       ],
       "title": "Licence is required"

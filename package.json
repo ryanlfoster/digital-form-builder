@@ -10,6 +10,7 @@
     "lint": "standard",
     "unit-test": "lab -v",
     "test": "npm run lint && npm run unit-test",
+    "e2e": "lab --verbose --timeout 15000 test/e2e.js",
     "postinstall": "npm run build"
   },
   "repository": {
@@ -37,7 +38,9 @@
   },
   "devDependencies": {
     "cheerio": "1.0.0-rc.2",
+    "chromedriver": "^2.41.0",
     "code": "5.2.0",
+    "geckodriver": "^1.12.2",
     "lab": "15.5.0",
     "node-sass": "4.9.3",
     "selenium-webdriver": "4.0.0-alpha.1"
