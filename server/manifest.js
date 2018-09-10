@@ -1,11 +1,18 @@
+const fs = require('fs')
 const path = require('path')
 const nunjucks = require('nunjucks')
 const config = require('../config')
 const pkg = require('../package.json')
 const { getState, mergeState } = require('./db')
-
+const convertMmoData = require('./convert-data')
 const analyticsAccount = config.analyticsAccount
-const dataFilePath = path.join(__dirname, './govsite.mmo.json')
+const dataFilePath = path.join(__dirname, './build.mmo.json')
+const mmoDataFilePath = path.join(__dirname, './mmo.json')
+const mmoData = require(mmoDataFilePath)
+const convertedData = convertMmoData(mmoData)
+
+fs.writeFileSync(dataFilePath, JSON.stringify(convertedData, null, 2))
+
 const data = require(dataFilePath)
 const playgroundModel = require('./govsite.playground.json')
 

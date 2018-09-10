@@ -1,0 +1,754 @@
+{
+  "sections": {
+    "checkBeforeStart": "Check before you start",
+    "elsewhereDeposit": "Deposit elsewhere in the world",
+    "elsewhereScuttling": "Scuttling elsewhere in the world",
+    "elsewhereIncineration": "Incineration elsewhere in the world",
+    "construction": "Construction",
+    "deposit": "Deposit",
+    "removal": "Removal",
+    "dredging": "Dredging",
+    "incineration": "Incineration"
+  },
+  "pages": {
+    "/activity-location": {
+      "title": "Where will your activity take place?",
+      "section": "checkBeforeStart",
+      "name": "location",
+      "options": [
+        [
+          "inSea",
+          "In the sea",
+          "/jurisdiction"
+        ],
+        [
+          "overSea",
+          "Over the sea",
+          "/jurisdiction"
+        ],
+        [
+          "onOrUnderSea",
+          "On or under the sea bed",
+          "/jurisdiction"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-not-required"
+        ]
+      ]
+    },
+    "/licence-not-required": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "html": "Based on the information provided a licence is not required for the activity."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-19": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 19 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-devolved": {
+      "title": "Licence not required",
+      "components": [
+        {
+          "html": "Based on the information provided the activity does not require a marine licence from the MMO but you may require a marine licence from the relevant devolved administration."
+        }
+      ]
+    },
+    "/licence-required-no-exemption": {
+      "title": "Licence is required",
+      "components": [
+        {
+          "html": "Based on the information provided the activity requires a\r\nlicence. No exemption is available and the activity is not suitable for self-service licensing.\r\n<br>\r\n<br>\r\n<a href=\"#\">Apply for a marine licence</a>"
+        }
+      ]
+    },
+    "/jurisdiction": {
+      "title": "Will your activity take place?",
+      "section": "checkBeforeStart",
+      "name": "jurisdiction",
+      "hint": "Not sure? Use the MMO’s <a href=\"http://defra.maps.arcgis.com/apps/webappviewer/ index.html?id=6d5a7b3a1f07440f947d1e31bfaa7d38\">interactive map</a> to find out",
+      "options": [
+        [
+          "englishWaters",
+          "In English waters",
+          "/activity-type"
+        ],
+        [
+          "northernIrishOffshoreWaters",
+          "In Northern Irish offshore waters",
+          "/activity-type"
+        ],
+        [
+          "northernIrishInshoreWaters",
+          "In Northern Irish inshore waters",
+          "/licence-not-required-devolved"
+        ],
+        [
+          "welshWaters",
+          "In Welsh waters",
+          "/licence-not-required-devolved"
+        ],
+        [
+          "scottishWaters",
+          "In Scottish waters",
+          "/licence-not-required-devolved"
+        ],
+        [
+          "elsewhere",
+          "Somewhere else in the world",
+          "/elsewhere-in-the-world/activity-type"
+        ]
+      ]
+    },
+    "/activity-type": {
+      "title": "What type of activity will be undertaken?",
+      "section": "checkBeforeStart",
+      "name": "activityType",
+      "options": [
+        [
+          "construction",
+          "Construction (including alteration and improvement of existing works)",
+          "/construction"
+        ],
+        [
+          "deposit",
+          "Deposit of a substance or object",
+          "/deposit/method"
+        ],
+        [
+          "removal",
+          "Removal of a substance or object",
+          "/removal"
+        ],
+        [
+          "dredging",
+          "Dredging",
+          "/dredging"
+        ],
+        [
+          "incineration",
+          "Incinerate a substance or object",
+          "/incineration/method"
+        ],
+        [
+          "depositExplosive",
+          "Deposit or use of an explosive substance or object",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "scuttling",
+          "Sinking of a vessel or floating container",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/construction": {
+      "title": "What is the purpose of your activity?",
+      "section": "construction",
+      "name": "activityType",
+      "options": [
+        [
+          "maintenance",
+          "Maintenance of existing structures and assets",
+          "/construction/maintenance"
+        ],
+        [
+          "new",
+          "Construction of something new",
+          "/construction/new"
+        ]
+      ]
+    },
+    "/construction/maintenance": {
+      "title": "What does your activity relate to?",
+      "section": "construction",
+      "name": "maintenanceActivityType",
+      "options": [
+        [
+          "mooringOrNavigation",
+          "Mooring or aid to navigation",
+          null
+        ],
+        [
+          "harbourWorks",
+          "Harbour works",
+          null
+        ],
+        [
+          "coastalProtectionDrainageOrFloodDefence",
+          "Coastal Protection, drainage or flood defence",
+          null
+        ],
+        [
+          "cablesAndPipelines",
+          "Cables and pipelines",
+          null
+        ],
+        [
+          "boredTunnel",
+          "An activity carried on wholly under the sea in connection with the construction or operation of a bored tunnel",
+          null
+        ],
+        [
+          "other",
+          "Other",
+          null
+        ]
+      ]
+    },
+    "/construction/new": {
+      "title": "What does your activity relate to?",
+      "section": "construction",
+      "name": "newActivityType",
+      "options": [
+        [
+          "mooringOrNavigation",
+          "Mooring or aid to navigation",
+          null
+        ],
+        [
+          "pontoon",
+          "A pontoon",
+          null
+        ],
+        [
+          "floodEmergency",
+          "An emergency activity in response to flood or flood risk",
+          null
+        ],
+        [
+          "boredTunnel",
+          "An activity carried on wholly under the sea in connection with the construction or operation of a bored tunnel",
+          null
+        ],
+        [
+          "deepSeaOrCrossrail",
+          "Deep sea mining or scheduled works under the Crossrail Act",
+          null
+        ],
+        [
+          "other",
+          "Other",
+          null
+        ]
+      ]
+    },
+    "/deposit/method": {
+      "title": "How will the substance or object be deposited?",
+      "section": "deposit",
+      "name": "method",
+      "options": [
+        [
+          "vehicleOrVessel",
+          "From a vehicle or vessel",
+          "/deposit/activity-type"
+        ],
+        [
+          "aircraft",
+          "From an aircraft",
+          "/deposit/activity-type"
+        ],
+        [
+          "marineStructure",
+          "From a marine structure",
+          "/deposit/activity-type"
+        ],
+        [
+          "floatingContainer",
+          "From a floating container in the sea",
+          "/deposit/activity-type"
+        ],
+        [
+          "landStructure",
+          "From a structure on land constructed or adapted wholly or mainly for the purposes of depositing solids in the sea",
+          "/deposit/activity-type"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-not-required"
+        ]
+      ]
+    },
+    "/deposit/activity-type": {
+      "title": "What is the purpose of your activity?",
+      "section": "deposit",
+      "name": "activityType",
+      "options": [
+        [
+          "markersMooringsOrPontoons",
+          "Markers, moorings, pontoons and aids to navigations",
+          null
+        ],
+        [
+          "scientificResearch",
+          "Scientific research - instruments, associated equipment and tracers",
+          null
+        ],
+        [
+          "maintenance",
+          "Maintenance - existing structures or assets",
+          "/deposit/maintenance"
+        ],
+        [
+          "emergency",
+          "Emergency – safety, pollution response and accident investigation",
+          null
+        ],
+        [
+          "fishing",
+          "Fishing (including shellfish)",
+          null
+        ],
+        [
+          "vessels",
+          "Vessels – Launching of vessels, rights of foreign vessels, deposits in the course of normal navigation, deposits in the course of aggregate or mineral dredging and dismantling of ships.",
+          null
+        ],
+        [
+          "defenceOrCrossrail",
+          "Defence activities, deep sea mining or scheduled works under the Crossrail act",
+          null
+        ]
+      ]
+    },
+    "/deposit/maintenance": {
+      "title": "Maintenance activity",
+      "section": "deposit",
+      "name": "maintenanceActivityType",
+      "options": [
+        [
+          "coastalProtectionDrainageOrFloodDefence",
+          "Maintenance of coast protection, drainage or flood defence works",
+          "/deposit/maintenance/coastal-drainage-flood"
+        ],
+        [
+          "floodEmergency",
+          "Emergency works in response to flood or flood risk",
+          null
+        ],
+        [
+          "harbourWorkMaintenance",
+          "Maintenance of harbour works",
+          null
+        ],
+        [
+          "cablesAndPipelines",
+          "Cables and pipelines",
+          null
+        ],
+        [
+          "other",
+          "Other",
+          null
+        ]
+      ]
+    },
+    "/deposit/maintenance/coastal-drainage-flood": {
+      "title": "Who will carry on the activity",
+      "section": "deposit",
+      "name": "maintenanceCoastalProtectionImplementer",
+      "options": [
+        [
+          "environmentAgency",
+          "The Environment Agency or someone on behalf of the Environment Agency",
+          "/deposit/maintenance/coastal-drainage-flood/EA"
+        ],
+        [
+          "coastProtectionAuthority",
+          "The Coast Protection Authority or someone on behalf of the Coast Protection Authority",
+          "/deposit/maintenance/coastal-drainage-flood/CPA"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/maintenance/coastal-drainage-flood/EA": {
+      "title": "Will the activity be carried on within the existing boundaries of the works being maintained?",
+      "section": "deposit",
+      "name": "maintenanceCoastalProtectionEA",
+      "options": [
+        "/deposit/maintenance/coastal-drainage-flood/EA/beach-replenishment",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/maintenance/coastal-drainage-flood/EA/beach-replenishment": {
+      "title": "Does the activity consist of beach replenishment?",
+      "section": "deposit",
+      "name": "maintenanceCoastalProtectionEABeachReplenishment",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-19"
+      ]
+    },
+    "/deposit/maintenance/coastal-drainage-flood/CPA": {
+      "title": "Is the activity for the purpose of maintaining coast protection works?",
+      "section": "deposit",
+      "name": "maintenanceCoastalProtectionCPA",
+      "hint": "Carried on within the existing boundaries of the works being maintained.",
+      "options": [
+        "/deposit/maintenance/coastal-drainage-flood/CPA/beach-replenishment",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/maintenance/coastal-drainage-flood/CPA/beach-replenishment": {
+      "title": "Does the activity consist of beach replenishment?",
+      "section": "deposit",
+      "name": "maintenanceCoastalProtectionCPABeachReplenishment",
+      "options": [
+        "/licence-not-required-exemption-available-article-19",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/removal": {
+      "title": "Is the substance or object to be removed on the seabed?",
+      "section": "removal",
+      "name": "isFromSeaBed",
+      "hint": "‘Seabed’ comprises the ground under the sea including anything laying on it such as a wreck",
+      "options": [
+        "/removal/method",
+        "/licence-not-required"
+      ]
+    },
+    "/removal/method": {
+      "title": "How will the removal be made?",
+      "section": "removal",
+      "name": "method",
+      "options": [
+        [
+          "vehicleOrVessel",
+          "A vehicle or vessel",
+          "/removal/activity-type"
+        ],
+        [
+          "aircraft",
+          "An aircraft",
+          "/removal/activity-type"
+        ],
+        [
+          "marineStructure",
+          "A marine structure",
+          "/removal/activity-type"
+        ],
+        [
+          "floatingContainer",
+          "A floating container in the sea",
+          "/removal/activity-type"
+        ],
+        [
+          "landStructure",
+          "A structure on land constructed or adapted wholly or mainly for the purposes of depositing solids in the sea",
+          "/removal/activity-type"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-not-required"
+        ]
+      ]
+    },
+    "/removal/activity-type": {
+      "title": "What is the purpose of your activity?",
+      "section": "removal",
+      "name": "activityType",
+      "options": [
+        [
+          "markersMooringsOrPontoons",
+          "Markers, moorings, pontoons and aids to navigation",
+          null
+        ],
+        [
+          "scientificResearch",
+          "Scientific research - instruments, associated equipment, samples and testing and analysis",
+          null
+        ],
+        [
+          "maintenance",
+          "Maintenance - existing structures or assets",
+          null
+        ],
+        [
+          "waste",
+          "Dead animals, litter, obstructions or accidental deposits",
+          null
+        ],
+        [
+          "emergency",
+          "Emergency – safety, prevention of pollution and accident investigation",
+          null
+        ],
+        [
+          "fishing",
+          "Fishing (including shellfish)",
+          null
+        ],
+        [
+          "vessels",
+          "Vessels – Rights of foreign vessels and dismantling of ships",
+          null
+        ],
+        [
+          "defenceOrCrossrail",
+          "Defence activities, deep sea mining or scheduled works under the Crossrail act",
+          null
+        ]
+      ]
+    },
+    "/dredging": {
+      "title": "What is the purpose of your activity?",
+      "section": "dredging",
+      "name": "activityType",
+      "options": [
+        [
+          "navigationalDredging",
+          "Navigational dredging",
+          null
+        ],
+        [
+          "shellfish",
+          "Shellfish propagation and cultivation",
+          null
+        ],
+        [
+          "coastalProtectionDrainageOrFloodDefence",
+          "Coastal Protection, drainage or flood defence",
+          null
+        ],
+        [
+          "emergency",
+          "Emergency",
+          null
+        ],
+        [
+          "safetyOrTraining",
+          "Safety/training",
+          null
+        ],
+        [
+          "pollutionPrevention",
+          "Prevention of pollution",
+          null
+        ],
+        [
+          "vessels",
+          "Vessels – Rights of foreign vessels and dismantling of ships",
+          null
+        ],
+        [
+          "deepSeaOrCrossrail",
+          "Deep sea mining or scheduled works under the Crossrail act",
+          null
+        ]
+      ]
+    },
+    "/incineration/method": {
+      "title": "Where will the substance or object be incinerated?",
+      "section": "incineration",
+      "name": "method",
+      "options": [
+        [
+          "vehicle",
+          "On a vehicle",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "vessel",
+          "On a vessel",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "marineStructure",
+          "On a marine structure",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "controlledFloatingContainer",
+          "On a floating container",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-not-required"
+        ]
+      ]
+    },
+    "/elsewhere-in-the-world/activity-type": {
+      "title": "What type of activity will be undertaken?",
+      "section": "checkBeforeStart",
+      "name": "activityTypeElsewhere",
+      "options": [
+        [
+          "deposit",
+          "Deposit a substance or object",
+          "/elsewhere-in-the-world/deposit"
+        ],
+        [
+          "scuttling",
+          "Sinking of a vessel or floating container",
+          "/elsewhere-in-the-world/scuttling"
+        ],
+        [
+          "incineration",
+          "Incinerate a substance or object",
+          "/elsewhere-in-the-world/incineration"
+        ],
+        [
+          "other",
+          "Something else",
+          null
+        ]
+      ]
+    },
+    "/elsewhere-in-the-world/deposit": {
+      "title": "How will the deposit be made?",
+      "section": "elsewhereDeposit",
+      "name": "method",
+      "options": [
+        [
+          "britishVessel",
+          "From a British Vessel",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "britishMarineStructure",
+          "From a British Marine structure",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "britishAircraft",
+          "From a British aircraft",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "floatingContainer",
+          "From a Floating container",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "other",
+          "Other",
+          "/elsewhere-in-the-world/deposit/where-loaded"
+        ]
+      ]
+    },
+    "/elsewhere-in-the-world/deposit/where-loaded": {
+      "title": "Where was the substance or object to be deposited loaded?",
+      "section": "elsewhereDeposit",
+      "name": "loaded",
+      "options": [
+        [
+          "inUk",
+          "United Kingdom (except Scotland)",
+          null
+        ],
+        [
+          "inUkMLA",
+          "UK marine licensing area",
+          null
+        ],
+        [
+          "none",
+          "None of the above",
+          "/licence-not-required"
+        ]
+      ]
+    },
+    "/elsewhere-in-the-world/incineration": {
+      "title": "Where will the incineration take place?",
+      "section": "elsewhereIncineration",
+      "name": "method",
+      "options": [
+        [
+          "britishVessel",
+          "On a British Vessel",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "britishMarineStructure",
+          "On a British Marine Structure",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "controlledFloatingContainer",
+          "On a floating container controlled from a British vessel, British aircraft, or British marine structure.",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "other",
+          "Other",
+          "/elsewhere-in-the-world/incineration/where-loaded"
+        ]
+      ]
+    },
+    "/elsewhere-in-the-world/incineration/where-loaded": {
+      "title": "Will the substance or object for incineration be loaded in any part of the United Kingdom (except Scotland)?",
+      "section": "elsewhereIncineration",
+      "name": "loadedInUk",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required"
+      ]
+    },
+    "/elsewhere-in-the-world/scuttling": {
+      "title": "How will the sinking be controlled?",
+      "section": "elsewhereScuttling",
+      "name": "method",
+      "options": [
+        [
+          "britishVessel",
+          "From a British vessel",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "britishAircraft",
+          "From a British aircraft",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "britishMarineStructure",
+          "From a British marine structure",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "other",
+          "Other",
+          "/elsewhere-in-the-world/scuttling/towed-or-propelled-from-uk"
+        ]
+      ]
+    },
+    "/elsewhere-in-the-world/scuttling/towed-or-propelled-from-uk": {
+      "title": "Where will the vessel or container be towed or propelled from, for the purpose its sinking",
+      "section": "elsewhereScuttling",
+      "name": "towedOrPropelled",
+      "options": [
+        [
+          "inUk",
+          "United Kingdom (except Scotland)",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "inUkMLA",
+          "UK marine licensing area (unless towing or propelling began outside of that area)",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "none",
+          "None of the above",
+          "/licence-not-required"
+        ]
+      ]
+    }
+  }
+}
