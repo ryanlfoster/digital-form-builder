@@ -12,14 +12,6 @@
   },
   "pages": {
     "/": {
-      "title": "MMO Exemptions Check Service",
-      "components": [
-        {
-          "Html": "On this page describe the service, why they would need to use the service and the questions/tasks they'll be asked.<br/>Also include any documentation or information they could need to hand."
-        }
-      ]
-    },
-    "/activity-location": {
       "title": "Where will your activity take place?",
       "section": "checkBeforeStart",
       "name": "location",
@@ -50,7 +42,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided a licence is not required for the activity."
+          "html": "Based on the information provided a licence is not required for the activity."
         }
       ]
     },
@@ -58,7 +50,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "You indicated your intent to place a marker which will be in place less than 24 hours.Based on the information provided your activity is one that meets the terms of an marine licence exemption and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "You indicated your intent to place a marker which will be in place less than 24 hours.Based on the information provided your activity is one that meets the terms of an marine licence exemption and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -66,7 +58,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 7 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 7 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -74,7 +66,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 8 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 8 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -82,7 +74,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 9 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 9 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -90,7 +82,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 10 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 10 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -98,7 +90,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 11 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 11 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -106,7 +98,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 12 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 12 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -114,7 +106,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 13 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 13 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
         }
       ]
     },
@@ -122,7 +114,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 14 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 14 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -130,7 +122,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 15 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 15 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -138,7 +130,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 16 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 16 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -146,7 +138,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 17 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 17 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
         }
       ]
     },
@@ -154,7 +146,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 18 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 18 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -162,7 +154,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 19 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 19 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -170,7 +162,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 20 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that the activity is carried on in accordance with an approval granted by the MMO.Please submit notification of your intention to carry on the activity and await approval before proceeding."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 20 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that the activity is carried on in accordance with an approval granted by the MMO.Please submit notification of your intention to carry on the activity and await approval before proceeding."
         }
       ]
     },
@@ -178,7 +170,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 22 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 22 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -186,7 +178,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 23 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 23 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -194,7 +186,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 25 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 25 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
         }
       ]
     },
@@ -202,7 +194,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 25A of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 25A of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
         }
       ]
     },
@@ -210,7 +202,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 25A of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that the activity is carried on in accordance with an approval granted by the MMO.Please submit notification of your intention to carry on the activity and await approval before proceeding."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 25A of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that the activity is carried on in accordance with an approval granted by the MMO.Please submit notification of your intention to carry on the activity and await approval before proceeding."
         }
       ]
     },
@@ -218,7 +210,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 26 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that the activity is carried on in accordance with an approval granted by the MMO.Please submit notification of your intention to carry on the activity and await approval before proceeding."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 26 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that the activity is carried on in accordance with an approval granted by the MMO.Please submit notification of your intention to carry on the activity and await approval before proceeding."
         }
       ]
     },
@@ -226,7 +218,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 26A of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 26A of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
         }
       ]
     },
@@ -234,7 +226,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 27 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 27 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -242,7 +234,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 30 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 30 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -250,7 +242,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 30 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 30 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -258,7 +250,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 31 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 31 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -266,7 +258,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 32 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 32 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -274,7 +266,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 33 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 33 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -282,7 +274,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 34 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that the activity is carried on in accordance with an approval granted by the MMO.Please submit notification of your intention to carry on the activity and await approval before proceeding."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 34 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that the activity is carried on in accordance with an approval granted by the MMO.Please submit notification of your intention to carry on the activity and await approval before proceeding."
         }
       ]
     },
@@ -290,7 +282,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 36 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 36 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -298,7 +290,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 37 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 37 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -306,7 +298,7 @@
       "title": "Licence is not required",
       "components": [
         {
-          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in S75 of the Marine and Coastal Access Act and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken. Note: This exemption does not permit the disposal of dredged material at sea. Disposal of dredged material at sea by means other than plough or agitation dredging requires a marine licence."
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in S75 of the Marine and Coastal Access Act and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken. Note: This exemption does not permit the disposal of dredged material at sea. Disposal of dredged material at sea by means other than plough or agitation dredging requires a marine licence."
         }
       ]
     },
@@ -314,7 +306,7 @@
       "title": "Licence not required",
       "components": [
         {
-          "Html": "Based on the information provided the activity does not require a marine licence from the MMO but you may require a marine licence from the relevant devolved administration."
+          "html": "Based on the information provided the activity does not require a marine licence from the MMO but you may require a marine licence from the relevant devolved administration."
         }
       ]
     },
@@ -322,7 +314,7 @@
       "title": "Licence is required",
       "components": [
         {
-          "Html": "Based on the information provided the activity requires a\r\nlicence. No exemption is available and the activity is not suitable for self-service licensing.\r\n<br>\r\n<br>\r\n<a href=\"#\">Apply for a marine licence</a>"
+          "html": "Based on the information provided the activity requires a\r\nlicence. No exemption is available and the activity is not suitable for self-service licensing.\r\n<br>\r\n<br>\r\n<a href=\"#\">Apply for a marine licence</a>"
         }
       ]
     },
@@ -1281,7 +1273,7 @@
         ],
         [
           "ramsarSiteTemporaryMarkers",
-          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "2Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
           "/licence-required-no-exemption"
         ],
         [
@@ -1583,7 +1575,7 @@
         ],
         [
           "ramsarSiteScientificEquipment",
-          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "2Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
           "/licence-required-no-exemption"
         ],
         [
@@ -1655,7 +1647,7 @@
         ],
         [
           "ramsarSiteTracers",
-          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "2Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
           "/licence-required-no-exemption"
         ],
         [
@@ -1939,7 +1931,7 @@
         "/licence-required-no-exemption"
       ]
     },
-    "removal": {
+    "/removal": {
       "title": "Is the substance or object to be removed on the seabed?",
       "section": "removal",
       "name": "isFromSeaBed",
@@ -2135,7 +2127,7 @@
       "section": "dredging",
       "name": "activityPurpose",
       "options": [
-        "/dredging/navigational-dredging/maintenance",
+        "/licence-required-no-exemption",
         "/licence-required-no-exemption"
       ]
     },
@@ -2238,12 +2230,12 @@
         [
           "inUk",
           "United Kingdom (except Scotland)",
-          null
+          "/licence-required-no-exemption"
         ],
         [
           "inUkMLA",
           "UK marine licensing area",
-          null
+          "/licence-required-no-exemption"
         ],
         [
           "none",

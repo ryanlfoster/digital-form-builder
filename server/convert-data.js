@@ -88,7 +88,9 @@ module.exports = (mmoData) => {
         // HTML
         page.components.push({
           type: component.type || 'Html',
-          content: !component.type ? `<div class="govuk-prose-scope">${component.html}</div>` : component.html
+          content: !component.type
+            ? `<div class="govuk-prose-scope"><p>${component.html}<p></div>`
+            : component.html
         })
       }
     })

@@ -13,7 +13,9 @@ const baseUrl = 'http://localhost:3009/activity-location'
 const mmoData = require('../server/mmo.json')
 const journeys = getJourneys(mmoData)
 
-// console.log(journeys)
+console.log(journeys.length)
+console.log(journeys)
+
 lab.experiment('Metadata Driven e2e Tests', () => {
   let browser
 
