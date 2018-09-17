@@ -1,4 +1,4 @@
-{
+﻿{
   "sections": {
     "checkBeforeStart": "Check before you start",
     "elsewhereDeposit": "Deposit elsewhere in the world",
@@ -12,6 +12,14 @@
   },
   "pages": {
     "/": {
+      "title": "MMO Exemptions Check Service",
+      "components": [
+        {
+          "Html": "On this page describe the service, why they would need to use the service and the questions/tasks they'll be asked.<br/>Also include any documentation or information they could need to hand."
+        }
+      ]
+    },
+    "/activity-location": {
       "title": "Where will your activity take place?",
       "section": "checkBeforeStart",
       "name": "location",
@@ -42,7 +50,111 @@
       "title": "Licence is not required",
       "components": [
         {
-          "html": "Based on the information provided a licence is not required for the activity."
+          "Html": "Based on the information provided a licence is not required for the activity."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-policy": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "You indicated your intent to place a marker which will be in place less than 24 hours.Based on the information provided your activity is one that meets the terms of an marine licence exemption and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-7": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 7 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-8": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 8 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-9": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 9 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-10": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 10 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-11": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 11 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-12": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 12 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-13": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 13 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-14": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 14 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-15": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 15 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-16": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 16 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-17": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 17 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-18": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 18 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
         }
       ]
     },
@@ -50,7 +162,151 @@
       "title": "Licence is not required",
       "components": [
         {
-          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 19 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 19 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-20": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 20 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that the activity is carried on in accordance with an approval granted by the MMO.Please submit notification of your intention to carry on the activity and await approval before proceeding."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-22": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 22 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-23": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 23 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-25": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 25 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-25a": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 25A of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-25a-mmo-approval": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 25A of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that the activity is carried on in accordance with an approval granted by the MMO.Please submit notification of your intention to carry on the activity and await approval before proceeding."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-26": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 26 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that the activity is carried on in accordance with an approval granted by the MMO.Please submit notification of your intention to carry on the activity and await approval before proceeding."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-26a": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 26A of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-27": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 27 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-29": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 30 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-30": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 30 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-31": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 31 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-32": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 32 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-33": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 33 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-34": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 34 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that the activity is carried on in accordance with an approval granted by the MMO.Please submit notification of your intention to carry on the activity and await approval before proceeding."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-36": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 36 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-article-37": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 37 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken."
+        }
+      ]
+    },
+    "/licence-not-required-exemption-available-Section-75": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "Html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in S75 of the Marine and Coastal Access Act and a marine licence is therefore not required. This exemption does not require any action from you before it is undertaken. Note: This exemption does not permit the disposal of dredged material at sea. Disposal of dredged material at sea by means other than plough or agitation dredging requires a marine licence."
         }
       ]
     },
@@ -58,7 +314,7 @@
       "title": "Licence not required",
       "components": [
         {
-          "html": "Based on the information provided the activity does not require a marine licence from the MMO but you may require a marine licence from the relevant devolved administration."
+          "Html": "Based on the information provided the activity does not require a marine licence from the MMO but you may require a marine licence from the relevant devolved administration."
         }
       ]
     },
@@ -66,7 +322,7 @@
       "title": "Licence is required",
       "components": [
         {
-          "html": "Based on the information provided the activity requires a\r\nlicence. No exemption is available and the activity is not suitable for self-service licensing.\r\n<br>\r\n<br>\r\n<a href=\"#\">Apply for a marine licence</a>"
+          "Html": "Based on the information provided the activity requires a\r\nlicence. No exemption is available and the activity is not suitable for self-service licensing.\r\n<br>\r\n<br>\r\n<a href=\"#\">Apply for a marine licence</a>"
         }
       ]
     },
@@ -286,12 +542,12 @@
         [
           "markersMooringsOrPontoons",
           "Markers, moorings, pontoons and aids to navigations",
-          null
+          "/deposit/markers-moorings-pontoons-aids-to-navigation"
         ],
         [
           "scientificResearch",
           "Scientific research - instruments, associated equipment and tracers",
-          null
+          "/deposit/scientific-research"
         ],
         [
           "maintenance",
@@ -301,22 +557,22 @@
         [
           "emergency",
           "Emergency – safety, pollution response and accident investigation",
-          null
+          "/deposit/emergency-safety-pollution-response-accident-investigation"
         ],
         [
           "fishing",
           "Fishing (including shellfish)",
-          null
+          "/deposit/fishing"
         ],
         [
           "vessels",
-          "Vessels – Launching of vessels, rights of foreign vessels, deposits in the course of normal navigation, deposits in the course of aggregate or mineral dredging and dismantling of ships.",
-          null
+          "Vessels – Launching of vessels, rights of foreign vessels, deposits in the course of normal navigation, deposits in the course of aggregate or mineral dredging and dismantling of ships",
+          "/deposit/vessels"
         ],
         [
-          "defenceOrCrossrail",
-          "Defence activities, deep sea mining or scheduled works under the Crossrail act",
-          null
+          "defenceMiningCrossrail",
+          "Miscellaneous - Defence activities, licensed deepsea mining and works authorised under the Crossrail Act 2008",
+          "/deposit/miscellaneous"
         ]
       ]
     },
@@ -326,36 +582,36 @@
       "name": "maintenanceActivityType",
       "options": [
         [
-          "coastalProtectionDrainageOrFloodDefence",
+          "coastalProtectionDrainageFloodDefence",
           "Maintenance of coast protection, drainage or flood defence works",
           "/deposit/maintenance/coastal-drainage-flood"
         ],
         [
           "floodEmergency",
           "Emergency works in response to flood or flood risk",
-          null
+          "/deposit/maintenance/emergency-flood"
         ],
         [
           "harbourWorkMaintenance",
           "Maintenance of harbour works",
-          null
+          "/deposit/maintenance/harbour-works"
         ],
         [
-          "cablesAndPipelines",
+          "cablesPipelines",
           "Cables and pipelines",
-          null
+          "/deposit/maintenance/cables-pipelines"
         ],
         [
           "other",
           "Other",
-          null
+          "/licence-required-no-exemption"
         ]
       ]
     },
     "/deposit/maintenance/coastal-drainage-flood": {
       "title": "Who will carry on the activity",
       "section": "deposit",
-      "name": "maintenanceCoastalProtectionImplementer",
+      "name": "maintenanceCoastalProtectionUndertaker",
       "options": [
         [
           "environmentAgency",
@@ -411,7 +667,1279 @@
         "/licence-required-no-exemption"
       ]
     },
-    "/removal": {
+    "/deposit/maintenance/emergency-flood": {
+      "title": "Will the activity be carried on by or on behalf on the Environment Agency?",
+      "section": "deposit",
+      "name": "maintenanceEmergencyFloodUndertaker",
+      "options": [
+        "/deposit/maintenance/emergency-flood/validation",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/maintenance/emergency-flood/validation": {
+      "title": "Are the circumstances serious, unexpected, and potentially dangerous requiring immediate action in response to either flooding or imminent risk of flooding?",
+      "section": "deposit",
+      "name": "maintenanceEmergencyFloodValidation",
+      "options": [
+        "/licence-not-required-exemption-available-article-20",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/maintenance/harbour-works": {
+      "title": "Is the activity for the purpose of maintaining harbour works?",
+      "section": "deposit",
+      "name": "maintenanceHarbourWorks",
+      "options": [
+        "/deposit/maintenance/harbour-works/boundaries",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/maintenance/harbour-works/boundaries": {
+      "title": "Will the activity be carried out within the boundaries of the works being maintained?",
+      "section": "deposit",
+      "name": "maintenanceHarbourWorksBoundaries",
+      "options": [
+        "/deposit/maintenance/harbour-works/undertaker",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/maintenance/harbour-works/undertaker": {
+      "title": "Will the activity be carried on by or on behalf of the harbour authority?",
+      "section": "deposit",
+      "name": "maintenanceHarbourWorksUndertaker",
+      "options": [
+        "/licence-not-required-exemption-available-article-23",
+        "/licence-required-no-exemption"
+      ]
+    }, 
+    "/deposit/maintenance/cables-pipelines": {
+      "title": "Does the activity relate to the inspection or repair of an exisiting cable or pipeline?",
+      "section": "deposit",
+      "name": "maintenanceCablesPipelines",
+      "options": [
+        "/deposit/maintenance/cables-pipelines/emergency",
+        "/licence-required-no-exemption"
+      ]
+    }, 
+    "/deposit/maintenance/cables-pipelines/emergency": {
+      "title": "Are the circumstances serious, unexpected, and potentially dangerous requiring immediate action?",
+      "section": "deposit",
+      "name": "maintenanceCablesPipelinesEmergency",
+      "options": [
+        "/deposit/maintenance/cables-pipelines/protection",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/maintenance/cables-pipelines/protection": {
+      "title": "Will the activity proposed under the exemption include the deposit of rock or other materials for the purpose of providing cable or pipeline protection?",
+      "section": "deposit",
+      "name": "maintenanceCablesPipelinesProtection",
+      "options": [
+        "/deposit/maintenance/cables-pipelines/explosives",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/maintenance/cables-pipelines/explosives": {
+      "title": "Does the activity involve the deposit or use of explosives?",
+      "section": "deposit",
+      "name": "maintenanceCablesPipelinesExplosives",
+      "options": [
+       "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-34"
+      ]
+    },
+    "/deposit/fishing": {
+      "title": "Fishing activity",
+      "section": "deposit",
+      "name": "fishingActivityType",
+      "options": [
+        [
+          "shellfishPropogationCultivation",
+          "Shellfish Propogation and Cultivation",
+          "/deposit/fishing/shellfish-propagation-cultivation"
+        ],
+        [
+          "fishingOperations",
+          "Fishing Operations",
+          "/deposit/fishing/fishing-operations"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    }, 
+    "/deposit/fishing/shellfish-propagation-cultivation": {
+      "title": "Will the activity involve the deposit of a shellfish, trestle, raft, cage, pole, rope, marker or line in the course of propagation or cultivation of shellfish?",
+      "section": "deposit",
+      "name": "fishingShellfishPropogationCultivationPurpose",
+      "options": [
+        "/deposit/fishing/shellfish-propagation-cultivation/obstruction",
+        "/licence-required-no-exemption"
+      ]
+    }, 
+    "/deposit/fishing/shellfish-propagation-cultivation/obstruction": {
+      "title": "Will the deposit cause or be likely to cause an obstruction or danger to navigation?",
+      "section": "deposit",
+      "name": "fishingShellfishPropogationCultivationObstruction",
+      "options": [
+       "/licence-required-no-exemption",
+        "/deposit/fishing/shellfish-propagation-cultivation/disposal-artificial-reef"
+      ]
+    },
+    "/deposit/fishing/shellfish-propagation-cultivation/disposal-artificial-reef": {
+      "title": "Is the deposit for the purpose of",
+      "section": "deposit",
+      "name": "fishingShellfishPropogationCultivationDisposalArtificialReef",
+      "options": [
+        [
+          "disposal",
+          "Disposal",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "creatingAlertingMaintainingArtificaialReef",
+          "Creating, altering or maintaining an artificial reef",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-not-required-exemption-available-article-13"
+        ]
+      ]
+    },
+    "/deposit/fishing/fishing-operations": {
+      "title": "What will be deposited",
+      "section": "deposit",
+      "name": "fishingOperationsPurpose",
+      "options": [
+        [
+          "depositFishingGear",
+          "Fishing Gear",
+          "/deposit/fishing/fishing-operations/fishing-gear"
+        ],
+        [
+          "depositReturns",
+          "Fish or other objects caught and returned in the course of a fishing operation",
+          "/licence-not-required-exemption-available-article-12"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/fishing/fishing-operations/fishing-gear": {
+      "title": "Is the purpose of the deposit to dispose of the gear?",
+      "section": "deposit",
+      "name": "fishingOperationDisposal",
+      "options": [
+       "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-12"
+      ]
+    }, 
+    "/deposit/emergency-safety-pollution-response-accident-investigation": {
+      "title": "Emergency, safety, pollution response, and accident investigation activity",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestigationActivityType",
+      "options": [
+        [
+          "floodFloodRisk",
+          "Flood or Flood Risk",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/flood"
+        ],
+        [
+          "cablesPipelines",
+          "Cables and pipelines",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/cables-pipelines"
+        ],
+        [
+          "coastguardActivites",
+          "Coastguard activities - safety purposes and training",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/coastguard"
+        ],
+        [
+          "flares",
+          "Flares - Safety purposes and training",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/flares"
+        ],
+        [
+          "salvageOperation",
+          "Salvage Operation",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/salvage"
+        ],
+        [
+          "safetyDirections",
+          "Safety directions under the Merchant Shipping Act 1995",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/safety-directions"
+        ],  
+        [
+          "equipmentContainControlRecoverOilsEtc",
+          "Equipment to contain, control or recover oils etc",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/pollution-response-equipment"
+        ],
+        [
+          "marineChemicalMarineOilTreatment",
+          "Marine chemical and marine oil treamtment substances",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/chemical-oil-treatment"
+        ],  
+        [
+          "dischargeOffshoreChemicalsOil",
+          "Discharge of offshore chemicals and oil",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/offshore-chemical-oil"
+        ],
+        [
+          "pollutionPreventionPart6MerchanntShippingAct1995",
+          "Pollution prevention - Activities within Part 6 of the Merchant Shipping Act 1995",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/pollution-prevention"
+        ],
+        [
+          "firefighting",
+          "Fire Fighting",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/fire-fighting"
+        ],
+        [
+          "airAccidentInvestigation",
+          "Air Accident Investigation",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/air-accident-investigation"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/flood": {
+    "title": "Will the activity be carried out by or on behalf of the Environment Agency",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionFloodUndertaker",
+      "options": [
+        "/deposit/emergency-safety-pollution-response-accident-investigation/flood/emergency",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/flood/emergency": {
+    "title": "Are the circumstances serious, unexpected and potentially dangerous requiring immediate action in response to flood or immient risk of flood?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionFloodEmergency",
+      "options": [
+        "/licence-not-required-exemption-available-article-20",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/cables-pipelines": {
+    "title": "Does the activity relate to the inspection or repair of an exisiting cable or pipeline",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionCablesPipelines",
+      "options": [
+        "/deposit/emergency-safety-pollution-response-accident-investigation/cables-pipelines/emergency",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/cables-pipelines/emergency": {
+    "title": "Are the circumstances serious, unexpected and potentially dangerous requiring immediate action?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionCablesPipelinesEmergency",
+      "options": [
+        "/deposit/emergency-safety-pollution-response-accident-investigation/cables-pipelines/protection",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/cables-pipelines/protection": {
+    "title": "Will the activity proposed under the exemption include the deposit of rock or other materials for the purpose of providing cable or pipeline protection?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionCablesPipelinesProtection",
+      "options": [
+        "/licence-required-no-exemption",
+        "/deposit/emergency-safety-pollution-response-accident-investigation/cables-pipelines/explosives"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/cables-pipelines/explosives": {
+    "title": "Does the activity involve the deposit or use of explosives?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionCablesPipelinesExplosives",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-34"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/coastguard": {
+    "title": "Will the activity be carried out by or on behalf the Secretary of State for Transport, acting through the Maritime and Coastguard Agency?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionCoastguardUndertaker",
+      "options": [
+        "/deposit/emergency-safety-pollution-response-accident-investigation/coastguard/purpose",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/coastguard/purpose": {
+      "title": "What is the purpose of the activity?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestigationPurpose",
+      "options": [
+        [
+          "securingVesselAircraftMarineStructureSafety",
+          "Securing the safety of a vessel, aircraft or marine structure ",
+          "/licence-not-required-exemption-available-article-32"
+        ],
+        [
+          "savingLife",
+          "Saving life",
+          "/licence-not-required-exemption-available-article-32"
+        ],
+        [
+          "training",
+          "Training for either of the above two purposes",
+          "/licence-not-required-exemption-available-article-32"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/flares": {
+    "title": "Will the activity involve the deposit or use of a distress flare, smoke float or similar pyrotechnic substance or object",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionObject",
+      "options": [
+        "/deposit/emergency-safety-pollution-response-accident-investigation/flares/purpose",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/flares/purpose": {
+      "title": "What is the purpose of the activity?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestigationPurpose",
+      "options": [
+        [
+          "securingVesselAircraftMarineStructureSafety",
+          "Securing the safety of a vessel, aircraft or marine structure ",
+          "/licence-not-required-exemption-available-article-33"
+        ],
+        [
+          "savingLife",
+          "Saving life",
+          "/licence-not-required-exemption-available-article-33"
+        ],
+        [
+          "training",
+          "Training for either of the above two purposes",
+          "/licence-not-required-exemption-available-article-33"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/salvage": {
+    "title": "Will the deposit be made in the course of a salvage operation for the purpose of ensuring the safety of a vessel or preventing pollution?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionSalvage",
+      "options": [
+        "/licence-not-required-exemption-available-article-9",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/safety-directions": {
+      "title": "What is the purpose of the deposit",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestigationSafetyDirectionsPurpose",
+      "options": [
+        [
+          "secretaryOfStateSchedule3A",
+          "In exercise of a power under Schedule 3A to the Merchant Shipping Act 1995 (safety directions) by or behalf of the Secretary of State",
+          "/licence-not-required-exemption-available-article-8"
+        ],
+        [
+          "schedule3ACompliance",
+          "Compliance with a direction under Schedule 3A to the Merchant Shipping Act 1995 (safety directions)",
+          "/licence-not-required-exemption-available-article-8"
+        ],
+        [
+          "avoidingInterference",
+          "Avoiding interference with action taken under Schedule 3A to the Merchant Shipping Act 1995 (safety directions)",
+          "/licence-not-required-exemption-available-article-8"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/pollution-response-equipment": {
+    "title": "Is the equipment to be deposited for the purpose of controlling, containing or recovering oil, a mixture containing oil, chemicals, flotsam or algae blooms?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionPollutionResponseEquipmentPurpose",
+      "options": [
+        "/deposit/emergency-safety-pollution-response-accident-investigation/pollution-response-equipment/explosives",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/pollution-response-equipment/explosives": {
+    "title": "Will the activity involve the deposit or use of an explosive substance or object?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionPollutionResponseEquipmentExplosives",
+      "options": [
+        "/licence-not-required-exemption-available-article-16",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/chemical-oil-treatment": {
+      "title": "What is the purpose of the deposit",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestigationChemicalOilTreatmentPurpose",
+      "options": [
+        [
+          "oilSpills",
+          "Dispersing or treating oil spills",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/chemical-oil-treatment/approved"
+        ],
+        [
+          "chemicalPollution",
+          "Treat chemical pollution",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/chemical-oil-treatment/approved"
+        ],
+        [
+          "seabedFouling",
+          "Remove fouling matter from the surface of the sea or seabed",
+          "/deposit/emergency-safety-pollution-response-accident-investigation/chemical-oil-treatment/approved"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/chemical-oil-treatment/approved": {
+    "title": "Is the substance to be deposited one which is approved for the purposes by the MMO?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionChemicalOilTreatmentApproved",
+      "options": [
+        "/deposit/emergency-safety-pollution-response-accident-investigation/chemical-oil-treatment/conditions",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/chemical-oil-treatment/conditions": {
+    "title": "Will the substance be used in accordance with conditions to which the approval is subject?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionChemicalOilTreatmentConditions",
+      "options": [
+        "/licence-not-required-exemption-available-article-15",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/offshore-chemical-oil": {
+    "title": "Is a permit required to carry out the activity under the Offshore Chemical Regulations 2002?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionDischargeOffshoreChemicalOilPermit1",
+      "options": [
+        "/licence-not-required-exemption-available-article-14",
+        "/deposit/emergency-safety-pollution-response-accident-investigation/offshore-chemical-oil/Permit2"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/offshore-chemical-oil/Permit2": {
+    "title": "Is a permit required to carry out the activity under the Offshore Petroleum Activities (Oil and Pollution Prevention and Control) Regulations 2005?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionDischargeOffshoreChemicalOilPermit2",
+      "options": [
+        "/licence-not-required-exemption-available-article-14",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/pollution-prevention": {
+    "title": "Does the activity proposed to be carried out fall within the subject matter of Part 6 of the Merchant Shipping Act 1995 (prevention of pollution)",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionPollutionPrevention",
+      "options": [
+        "/licence-not-required-exemption-available-article-7",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/fire-fighting": {
+    "title": "Will the activity be carried on for the purpose of fighting or preventing the spread of fire?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionFireFighting",
+      "options": [
+        "/licence-not-required-exemption-available-article-10",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/emergency-safety-pollution-response-accident-investigation/air-accident-investigation": {
+    "title": "Will the activity be carried on for the purpose of recovering a substance or object as part of an official investigation into an accident involving aricraft?",
+      "section": "deposit",
+      "name": "emergencySafetyPollutionResponseAccidentInvestiagtionAirAccidentInvestigation",
+      "options": [
+        "/licence-not-required-exemption-available-article-11",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation": {
+      "title": "Markers, moorings, pontoons and aids to navigation activity",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationActivityType",
+      "options": [
+        [
+          "temporaryMarkers",
+          "Temporary markers",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/temporary-markers"
+        ],
+        [
+          "marineSiteMarkers",
+          "Markers for European marine sites and conservation zones",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/marine-site-markers"
+        ],
+        [
+          "mooringsAidsToNavigation",
+          "Moorings and aids to navigation",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/moorings"
+        ],
+        [
+          "pontoons",
+          "Pontoons",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoons"
+        ],
+        [
+          "diverTrails",
+          "Diver trails",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/dive-trails"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/temporary-markers": {
+      "title": "What is the purpose of your activity?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationTemporaryMarkerPurpose",
+      "options": [
+        [
+          "markerLess24Hours",
+          "Placing a marker that will be in place for less than 24 hours",
+          "/licence-not-required-exemption-available-policy"
+        ],
+        [
+          "markerLess28Days",
+          "Placing a marker that will be in place for longer than 24 hours but less than 28 days",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/temporary-markers/obstruction"
+        ],
+        [
+          "markerGreater28Days",
+          "Placing a marker that will be in place for longer than than 28 days",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/temporary-markers/obstruction": {
+    "title": "Will the activity cause or be likely to cause an obstruction or danger to navigation?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationTemporaryMarkerObstruction",
+      "options": [
+        "/licence-required-no-exemption",
+        "/deposit/markers-moorings-pontoons-aids-to-navigation/temporary-markers/mpa"
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/temporary-markers/mpa": {
+    "title": "Will the activity take place in or within 200m of a Marine Protected Area?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationTemporaryMarkerMpa",
+      "options": [
+        "/deposit/markers-moorings-pontoons-aids-to-navigation/temporary-markers/mpa-management",
+        "/licence-not-required-exemption-available-article-26a"
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/temporary-markers/mpa-management": {
+    "title": "Is the activity directly connected with or necessary to the management of the Marine Protected Area?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationTemporaryMarkerMpa",
+      "options": [
+        "/licence-not-required-exemption-available-article-26a",
+        "/deposit/markers-moorings-pontoons-aids-to-navigation/temporary-markers/lse"
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/temporary-markers/lse": {
+      "title": "Is the activity",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationTemporaryMarkerLse",
+      "options": [
+        [
+          "europeanSiteTemporaryMarkers",
+          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "ramsarSiteTemporaryMarkers",
+          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "mczTemporaryMarkers",
+          "Capable of affecting (other than insignificantly), the protected features of a Marine Conservation Zone or any ecological or geomorphological process on which the conservation of any protected feature of an MCZ is (wholly or in Part) dependant?",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "otherTemporaryMarkers",
+          "Unlikely to have any relevant effect  on any sites specified above",
+          "/licence-not-required-exemption-available-article-26a"
+        ]
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/marine-site-markers": {
+      "title": "Who will carry out the activity?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationMarineSiteMarkerUndertaker",
+      "options": [
+        [
+          "naturalEngland",
+          "Natural England",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/marine-site-markers/ne-purpose"
+        ],
+        [
+          "publicAuthority",
+          "A public authority",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/marine-site-markers/pa-purpose"
+        ],
+        [
+          "other",
+          "Someone else",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/marine-site-markers/ne-purpose": {
+      "title": "What is the purpose of the activity?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationMarineSiteMarkerNePurpose",
+      "options": [
+        [
+          "marineSiteExistance",
+          "Installing a marker to indicate the existance and extent of a European Marine Site",
+          "/licence-not-required-exemption-available-article-26"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/marine-site-markers/pa-purpose": {
+      "title": "What is the purpose of the activity?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationMarineSiteMarkerPaPurpose",
+      "options": [
+        [
+          "marineSiteExistance",
+          "Installing a marker to indicate the existance and extent of a Marine Conservation Zone",
+          "/licence-not-required-exemption-available-article-26"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/moorings": {
+      "title": "What will be deposited?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationMoorings",
+      "options": [
+        [
+          "pileMooring",
+          "Pile mooring",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/moorings/undertaker"
+        ],
+        [
+          "swingingMooring",
+          "Swinging mooring",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/moorings/undertaker"
+        ],
+        [
+          "trotMooring",
+          "Trot Mooring",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/moorings/undertaker"
+        ],
+        [
+          "aidToNavigation",
+          "Aid to Navigation",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/moorings/undertaker"
+        ],
+        [
+          "other",
+          "Something else",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/moorings/undertaker": {
+      "title": "Who will carry out the activity?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationMooringsUndertaker",
+      "options": [
+        [
+          "harbourAuthority",
+          "A harbour authority or someone on behalf of a harbour authority",
+          "/licence-not-required-exemption-available-article-25"
+        ],
+        [
+          "lighthouseAuthority",
+          "A lighthouse authority or someone on behalf of a harbour authority",
+          "/licence-not-required-exemption-available-article-25"
+        ],
+        [
+          "someoneElse",
+          "Someone else",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/moorings/consent"
+        ]
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/moorings/consent": {
+    "title": "Does the activity require consent from a harbour authority under local legislation",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationMooringConsent",
+      "options": [
+        "/deposit/markers-moorings-pontoons-aids-to-navigation/moorings/approval",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/moorings/approval": {
+    "title": "Has consent been granted",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationMooringApproval",
+      "options": [
+        "/licence-not-required-exemption-available-article-25",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoons": {
+    "title": "Is the purpose of the activity to provide a pontoon?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationPontoonPurpose",
+      "options": [
+        "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoons/undertaker",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoons/undertaker": {
+      "title": "Who will carry out the activity?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationPontoonUndertaker",
+      "options": [
+        [
+          "harbourAuthority",
+          "A harbour authority or someone on behalf of a harbour authority",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoon/deck"
+        ],
+        [
+          "someoneElse",
+          "Someone else",
+          "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoon/consent"
+        ]
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoon/consent": {
+    "title": "Does the activity require consent from a harbour authority under local legislation",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationPontoonConsent",
+      "options": [
+        "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoon/approval",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoon/approval": {
+    "title": "Has consent been granted",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationPontoonApproval",
+      "options": [
+        "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoon/deck",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoon/deck": {
+    "title": "When complete will the deck of the pontoon concerned comprise of an area which exceeds 30m2",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationPontoonDeck",
+      "options": [
+        "/licence-required-no-exemption",
+        "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoon/quantity"
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoon/quantity": {
+    "title": "will more than 10 pontoons be constructed or deposited in the 6 months prior to the commencement of this activity, either by or on behalf of the habour authority or with the consent required from and granted by the harbour authority?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationPontoonDeck",
+      "options": [
+        "/licence-not-required-exemption-available-article-25a-mmo-approval",
+        "/licence-not-required-exemption-available-article-25a"
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/dive-trails": {
+    "title": "Is the purpose of the activity to place or secure signage or other identifying markers to a wreck?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationDiveTrails",
+      "options": [
+        "/deposit/markers-moorings-pontoons-aids-to-navigation/dive-trails/restricted-area",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/markers-moorings-pontoons-aids-to-navigation/dive-trails/restricted-area": {
+    "title": "Is the wreck within an area designated as a restricted area under the Protection of Wrecks Act 1973?",
+      "section": "deposit",
+      "name": "markerMooringPontoonAidToNavigationDiveTrailsRestrictedArea",
+      "options": [
+        "/licence-not-required-exemption-available-article-31",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/scientific-research": {
+      "title": "Scientific research",
+      "section": "deposit",
+      "name": "scientificResearchActivityType",
+      "options": [
+        [
+          "scientificInstruments",
+          "Scientific instruments and associated equipment",
+          "/deposit/scientific-research/scientific-equipment"
+        ],
+        [
+          "tracersReagents",
+          "Tracers and reagents",
+          "/deposit/scientific-research/tracers-reagents"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/scientific-research/scientific-equipment": {
+    "title": "Is the object to be deposited a scientific instrument or equipment associated with such an instrument?",
+      "section": "deposit",
+      "name": "scientificInstrumentsDefinition",
+      "options": [
+        "/deposit/scientific-research/scientific-equipment/survey",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/scientific-research/scientific-equipment/survey": {
+    "title": "Is the instrument or equipment to be deposited as part of a scientific experiment or survey?",
+      "section": "deposit",
+      "name": "scientificInstrumentsSurvey",
+      "options": [
+        "/deposit/scientific-research/scientific-equipment/obstruction",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/scientific-research/scientific-equipment/obstruction": {
+    "title": "Will the activity cause or be likely to cause an obstruction or danger to navigation?",
+      "section": "deposit",
+      "name": "scientificResearchScientificEquipmentObstruction",
+      "options": [
+        "/licence-required-no-exemption",
+        "/deposit/scientific-research/scientific-equipment/mpa"
+      ]
+    },
+    "/deposit/scientific-research/scientific-equipment/mpa": {
+    "title": "Will the activity take place in or within 200m of a Marine Protected Area?",
+      "section": "deposit",
+      "name": "scientificResearchScientificEquipmentMpa",
+      "options": [
+        "/deposit/scientific-research/scientific-equipment/mpa-management",
+        "/deposit/scientific-research/scientific-equipment/disposal"
+      ]
+    },
+    "/deposit/scientific-research/scientific-equipment/mpa-management": {
+    "title": "Is the activity directly connected with or necessary to the management of the Marine Protected Area?",
+      "section": "deposit",
+      "name": "scientificResearchScientificEquipmentMpa",
+      "options": [
+        "/deposit/scientific-research/scientific-equipment/disposal",
+        "/deposit/scientific-research/scientific-equipment/lse"
+      ]
+    },
+    "/deposit/scientific-research/scientific-equipment/lse": {
+      "title": "Is the activity",
+      "section": "deposit",
+      "name": "scientificResearchScientificEquipmentLse",
+      "options": [
+        [
+          "europeanSiteScientificEquipment",
+          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "ramsarSiteScientificEquipment",
+          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "mczScientificEquipment",
+          "Capable of affecting (other than insignificantly), the protected features of a Marine Conservation Zone or any ecological or geomorphological process on which the conservation of any protected feature of an MCZ is (wholly or in Part) dependant?",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "otherScientificEquipment",
+          "Unlikely to have any relevant effect on any sites specified above",
+          "/deposit/scientific-research/scientific-equipment/disposal"
+        ]
+      ]
+    },
+    "/deposit/scientific-research/scientific-equipment/disposal": {
+    "title": "Is the deposit made for the purpose of disposal?",
+      "section": "deposit",
+      "name": "scientificResearchScientificEquipmentDisposal",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-17"
+      ]
+    },
+    "/deposit/scientific-research/tracers-reagents": {
+    "title": "Is the reagent or tracer approved for use by the MMO?",
+      "section": "deposit",
+      "name": "scientificResearchTracersReagents",
+      "options": [
+        "/deposit/scientific-research/tracers-reagents/obstruction",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/scientific-research/tracers-reagents/obstruction": {
+    "title": "Will the activity cause or be likely to cause an obstruction or danger to navigation?",
+      "section": "deposit",
+      "name": "scientificResearchTracersReagentsObstruction",
+      "options": [
+        "/licence-required-no-exemption",
+        "/deposit/scientific-research/tracers-reagents/mpa"
+      ]
+    },
+    "/deposit/scientific-research/tracers-reagents/mpa": {
+    "title": "Will the activity take place in or within 200m of a Marine Protected Area?",
+      "section": "deposit",
+      "name": "scientificResearchTracersReagentsMpa",
+      "options": [
+        "/deposit/scientific-research/tracers-reagents/mpa-management",
+        "/licence-not-required-exemption-available-article-17"
+      ]
+    },
+    "/deposit/scientific-research/tracers-reagents/mpa-management": {
+    "title": "Is the activity directly connected with or necessary to the management of the Marine Protected Area?",
+      "section": "deposit",
+      "name": "scientificResearchTracersReagentsMpa",
+      "options": [
+        "/licence-not-required-exemption-available-article-17",
+        "/deposit/scientific-research/tracers-reagents/lse"
+      ]
+    },
+    "/deposit/scientific-research/tracers-reagents/lse": {
+      "title": "Is the activity",
+      "section": "deposit",
+      "name": "scientificResearchTracersReagentsLse",
+      "options": [
+        [
+          "europeanSiteTracers",
+          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "ramsarSiteTracers",
+          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "mczTracers",
+          "Capable of affecting (other than insignificantly), the protected features of a Marine Conservation Zone or any ecological or geomorphological process on which the conservation of any protected feature of an MCZ is (wholly or in Part) dependant?",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "otherTracers",
+          "Unlikely to have any relevant effect on any sites specified above",
+          "/licence-not-required-exemption-available-article-17"
+        ]
+      ]
+    },
+    "/deposit/vessels": {
+      "title": "What is the purpose of your activity?",
+      "section": "deposit",
+      "name": "vesselsActivityType",
+      "options": [
+        [
+          "lanchingVessels",
+          "Lanching of vessels etc",
+          "/deposit/vessels/launch"
+        ],
+        [
+          "normalNavigation",
+          "Deposits in the normal course of navigation",
+          "/deposit/vessels/navigation"
+        ],
+        [
+          "aggregateDredging",
+          "Deposits in the course of aggregate dredging",
+          "/deposit/vessels/aggregate-dredging"
+        ],
+        [
+          "dismantlingShips",
+          "Dismantlign of ships",
+          "/deposit/vessels/dismantling-ships"
+        ],
+        [
+          "foreignVessels",
+          "Rights of foreign vessels",
+          "/deposit/vessels/foreign-vessels"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/vessels/launch": {
+    "title": "Is the purpose of the deposit to facilitate the launching of a vehicle, vessel, aircraft, marine structure or floating container?",
+      "section": "deposit",
+      "name": "vesselsLaunchPurpose",
+      "options": [
+        "/deposit/vessels/launch/construction",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/vessels/launch/construction": {
+    "title": "Will the activity involve construction of any kind?",
+      "section": "deposit",
+      "name": "vesselsLaunchConstruction",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-27"
+      ]
+    },
+    "/deposit/vessels/navigation": {
+    "title": "Will the deposit be made from a vehicle, vessel, aircraft or marine strucutre in the normal course of its maintenance or navigation?",
+      "section": "deposit",
+      "name": "vesselsNavigation",
+      "options": [
+        "/deposit/vessels/navigation/disposal",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/vessels/navigation/disposal": {
+    "title": "Will the substance or object deposited be recovered at any point?",
+      "section": "deposit",
+      "name": "vesselsNavigationDisposal",
+      "options": [
+        "/deposit/vessels/navigation/explosives",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/vessels/navigation/explosives": {
+    "title": "Will the activity involve the deposit or use of any explosive substance or article?",
+      "section": "deposit",
+      "name": "vesselsNavigationExplosive",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-22"
+      ]
+    },
+    "/deposit/vessels/aggregate-dredging": {
+    "title": "Was the substance or object to be deposited taken from the sea in the course of dredging for aggregates?",
+      "section": "deposit",
+      "name": "vesselsAggregateDredging",
+      "options": [
+        "/deposit/vessels/aggregate-dredging/object-type",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/vessels/aggregate-dredging/object-type": {
+      "title": "What will be deposited?",
+      "section": "deposit",
+      "name": "vesselsAggregateDredgingObjectType",
+      "options": [
+        [
+          "aggregateMinerals",
+          "Aggregate or minerals",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "water",
+          "Water",
+          "/deposit/vessels/aggregate-dredging/water-location"
+        ],
+        [
+          "somethingElse",
+          "Something else",
+          "/deposit/vessels/aggregate-dredging/something-else-location"
+        ]
+      ]
+    },
+    "/deposit/vessels/aggregate-dredging/water-location": {
+    "title": "Will the water be deposited by overflow or pumped discharge from the hold of the vessel at the site of dredging, either during or following its completion, and or on the return journey of the vessel?",
+      "section": "deposit",
+      "name": "vesselsAggregateDredgingWaterlocation",
+      "options": [
+        "/licence-not-required-exemption-available-article-18",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/vessels/aggregate-dredging/something-else-location": {
+    "title": "Will the substance or object be deposited at the site where the dredging took place?",
+      "section": "deposit",
+      "name": "vesselsAggregateDredgingSomethingElselocation",
+      "options": [
+        "/licence-not-required-exemption-available-article-18",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/vessels/dismantling-ships": {
+    "title": "Will the deposit be made as part of the dismantling of a ship that is waste?",
+      "section": "deposit",
+      "name": "vesselsDismantlingShips",
+      "options": [
+        "/deposit/vessels/dismantling-ships/explosives",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/vessels/dismantling-ships/explosives": {
+    "title": "Will the activity involve the deposit or use of any explosive substance or article?",
+      "section": "deposit",
+      "name": "vesselsDismantlingShipsExplosives",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-18"
+      ]
+    },
+    "/deposit/vessels/foreign-vessels": {
+    "title": "Will the activity be carried out in exercise of a right under rules of international law?",
+      "section": "deposit",
+      "name": "vesselsForeignVessels",
+      "options": [
+        "/deposit/vessels/foreign-vessels/undertaker",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/deposit/vessels/foreign-vessels/undertaker": {
+      "title": "Will the activity be carried out by or in relation to",
+      "section": "deposit",
+      "name": "vesselsForeignVesselsUndertaker",
+      "options": [
+        [
+          "thirdCountry",
+          "A third country vessel",
+          "/licence-not-required-exemption-available-article-37"
+        ],
+        [
+          "warship",
+          "A warship, naval auxiliary, other vessel or aircraft owned or operated by a state and used, for the time being, only on government non-commercial service (whether or not the warship, naval auxiliary, other vessel is a third country vessel)",
+          "/licence-not-required-exemption-available-article-37"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/miscellaneous": {
+      "title": "Whats is the purpose of your activity?",
+      "section": "deposit",
+      "name": "miscellaneousActivityType",
+      "options": [
+        [
+          "defenceActivities",
+          "Defence activities",
+          "/deposit/miscellaneous/defence-activities"
+        ],
+        [
+          "deepseaMining",
+          "Licensed deepsea mining",
+          "/deposit/miscellaneous/deepsea-mining"
+        ],
+        [
+          "crossrailAct",
+          "Scheduled works authorised under the Crossrail Act",
+          "/deposit/miscellaneous/crossrail-act"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/miscellaneous/defence-activities": {
+      "title": "Who will carryout the activity?",
+      "section": "deposit",
+      "name": "miscellaneousDefenceActivitiesUndertaker",
+      "options": [
+        [
+          "ukForces",
+          "The naval, military or air forces of the crown (including reserve forces and the Royal Fleet Auxiliary)",
+          "/deposit/miscellaneous/defence-activities/restriction"
+        ],
+        [
+          "visiting forces",
+          "A visiting force within the meaning given by Section 12 of the Visiting Forces Act 1952",
+          "/deposit/miscellaneous/defence-activities/restriction"
+        ],
+        [
+          "someoneElse",
+          "Someone else",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/miscellaneous/defence-activities/restriction": {
+    "title": "Will the activity involve construction or dredging of any kind?",
+      "section": "deposit",
+      "name": "defenceActivityRestriction",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-36"
+      ]
+    },
+    "/deposit/miscellaneous/deepsea-mining": {
+      "title": "Is the activity carried out?",
+      "section": "deposit",
+      "name": "miscellaneousDeepseaMiningPurpose",
+      "options": [
+        [
+          "explorationExploitationLicence",
+          "In pursuance of an exploration or exploitation licence issued under the Deep Sea Mining (Temporary Provision) Act 1981",
+          "/licence-not-required-exemption-available-article-30"
+        ],
+        [
+          "reciprocalAuthoriation",
+          "In pursuance of a reciprocal authoriation within the meaning given by section 3(3) of the Deep Sea Mining (Temporary Provision) Act 1981",
+          "/licence-not-required-exemption-available-article-30"
+        ],
+        [
+          "other",
+          "for another reason",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/deposit/miscellaneous/crossrail-act": {
+    "title": "Will the activity be carried out within the limits of deviation for scheduled works in exercise of powers conferred by the Crossrail Act 2008 in relation to those works or any work connected with them?",
+      "section": "deposit",
+      "name": "defenceActivityRestriction",
+      "options": [
+        "/licence-not-required-exemption-available-article-29",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "removal": {
       "title": "Is the substance or object to be removed on the seabed?",
       "section": "removal",
       "name": "isFromSeaBed",
@@ -513,7 +2041,7 @@
         [
           "navigationalDredging",
           "Navigational dredging",
-          null
+          "/dredging/navigational-dredging/undertaker"
         ],
         [
           "shellfish",
@@ -550,6 +2078,65 @@
           "Deep sea mining or scheduled works under the Crossrail act",
           null
         ]
+      ]
+    },
+    "/dredging/navigational-dredging/undertaker": {
+      "title": "Will the activity be carried on by or on behalf of the harbour authority?",
+      "section": "dredging",
+      "name": "navigationalDredgingUndertaker",
+      "options": [
+        "/dredging/navigational-dredging/authorisation",
+        "/dredging/navigational-dredging/purpose"
+      ]
+    },
+    "/dredging/navigational-dredging/authorisation": {
+      "title": "The activity is authorised by",
+      "section": "dredging",
+      "name": "authorisationType",
+      "options": [
+        [
+          "localAct",
+          "A local Act",
+          "/dredging/navigational-dredging/method"
+        ],
+        [
+          "harboursAct",
+          "An order under Section 14 or 16 of the Harbours Act 1964",
+          "/dredging/navigational-dredging/method"
+        ],
+        [
+          "section1HaNorthernIreland",
+          "An order under Section 1 of the Habrours Act (Northern ireland) 1970",
+          "/dredging/navigational-dredging/method"
+        ],
+        [
+          "section10HaNorthernIreland",
+          "An order under Section 10(3) of the Habrours Act (Northern ireland) 1970",
+          "/dredging/navigational-dredging/method"
+        ],
+        [
+          "other",
+          "None of the above",
+          "/dredging/navigational-dredging/purpose"
+        ]
+      ]
+    },
+    "/dredging/navigational-dredging/method": {
+    "title": "Will the activity be carried out in accordance with the authorisation?",
+      "section": "dredging",
+      "name": "activityMethod",
+      "options": [
+        "/licence-not-required-exemption-available-Section-75",
+        "/dredging/navigational-dredging/purpose"
+      ]
+    },
+    "/dredging/navigational-dredging/purpose": {
+    "title": "Is the purpose of the activity to enable the continued use of a navigational channel or area of seas by vessels?",
+      "section": "dredging",
+      "name": "activityPurpose",
+      "options": [
+        "/dredging/navigational-dredging/maintenance",
+        "/licence-required-no-exemption"
       ]
     },
     "/incineration/method": {
