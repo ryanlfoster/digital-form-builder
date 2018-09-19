@@ -1273,7 +1273,7 @@
         ],
         [
           "ramsarSiteTemporaryMarkers",
-          "2Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a Ramsar site",
           "/licence-required-no-exemption"
         ],
         [
@@ -1575,7 +1575,7 @@
         ],
         [
           "ramsarSiteScientificEquipment",
-          "2Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a Ramsar site",
           "/licence-required-no-exemption"
         ],
         [
@@ -1647,7 +1647,7 @@
         ],
         [
           "ramsarSiteTracers",
-          "2Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a Ramsar site",
           "/licence-required-no-exemption"
         ],
         [
@@ -1925,7 +1925,7 @@
     "/deposit/miscellaneous/crossrail-act": {
     "title": "Will the activity be carried out within the limits of deviation for scheduled works in exercise of powers conferred by the Crossrail Act 2008 in relation to those works or any work connected with them?",
       "section": "deposit",
-      "name": "defenceActivityRestriction",
+      "name": "depsoitMiscellaneousCrossrailAct",
       "options": [
         "/licence-not-required-exemption-available-article-29",
         "/licence-required-no-exemption"
@@ -2033,42 +2033,32 @@
         [
           "navigationalDredging",
           "Navigational dredging",
-          "/dredging/navigational-dredging/undertaker"
+          "/dredging/navigational-dredging"
         ],
         [
           "shellfish",
           "Shellfish propagation and cultivation",
-          null
+          "/dredging/shellfish-propogation-cultivation"
         ],
         [
           "coastalProtectionDrainageOrFloodDefence",
           "Coastal Protection, drainage or flood defence",
-          null
+          "/dredging/coastal-drainage-flood"
         ],
         [
           "emergency",
           "Emergency",
-          null
+          "/dredging/emergency"
         ],
         [
           "safetyOrTraining",
           "Safety/training",
-          null
+          "/dredging/safety-training"
         ],
         [
-          "pollutionPrevention",
-          "Prevention of pollution",
-          null
-        ],
-        [
-          "vessels",
-          "Vessels – Rights of foreign vessels and dismantling of ships",
-          null
-        ],
-        [
-          "deepSeaOrCrossrail",
-          "Deep sea mining or scheduled works under the Crossrail act",
-          null
+          "miscellaneous",
+          "Miscellaneous - Licensed deepsea mining and scheduled works under the Crossrail Act",
+          "/dredging/miscellaneous"
         ]
       ]
     },
@@ -2116,7 +2106,7 @@
     "/dredging/navigational-dredging/method": {
     "title": "Will the activity be carried out in accordance with the authorisation?",
       "section": "dredging",
-      "name": "activityMethod",
+      "name": "navigationalDredgingMethod",
       "options": [
         "/licence-not-required-exemption-available-Section-75",
         "/dredging/navigational-dredging/purpose"
@@ -2125,9 +2115,506 @@
     "/dredging/navigational-dredging/purpose": {
     "title": "Is the purpose of the activity to enable the continued use of a navigational channel or area of seas by vessels?",
       "section": "dredging",
-      "name": "activityPurpose",
+      "name": "navigationalDredgingPurpose",
+      "options": [
+        "/dredging/navigational-dredging/maintenance",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/navigational-dredging/maintenance": {
+    "title": "Will the dredging undertaken at a site and at a depth where at least one previous dredging campaign has taken place in the last 10 years?",
+      "section": "dredging",
+      "name": "navigationalDredgingMaintenance",
+      "options": [
+        "/dredging/navigational-dredging/previous-purpose",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/navigational-dredging/previous-purpose": {
+    "title": "Was the purpose of the previous dredge to enable the continued use of the area of sea by vessels??",
+      "section": "dredging",
+      "name": "navigationalDredgingPreviousPurpose",
+      "options": [
+        "/dredging/navigational-dredging/quantity",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/navigational-dredging/quantity": {
+      "title": "How many cubic meters will be dredged?",
+      "section": "dredging",
+      "name": "authorisationType",
+      "options": [
+        [
+          "lessThan501",
+          "500m3 or less",
+          "/dredging/navigational-dredging/last-12months"
+        ],
+        [
+          "moreThan500",
+          "501m3 or more",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/dredging/navigational-dredging/last-12months": {
+    "title": "Has any other dredging taken place at the site of the proposed dredge in the previous 12 months?",
+      "section": "dredging",
+      "name": "navigationalDredgingPreviousLast12Months",
+      "options": [
+        "/dredging/navigational-dredging/last-12-quantity",
+        "/dredging/navigational-dredging/obstruction"
+      ]
+    },
+    "/dredging/navigational-dredging/last-12-quantity": {
+    "title": "Does the quantity of material dredged at the site in the previous 12 month combined with the amount proposed to be dredged exceed 1500m3?",
+      "section": "dredging",
+      "name": "navigationalDredgingPreviousLast12MonthsQuantity",
       "options": [
         "/licence-required-no-exemption",
+        "/dredging/navigational-dredging/obstruction"
+      ]
+    },
+    "/dredging/navigational-dredging/obstruction": {
+    "title": "Is the activity one that will cause or be likely to cause obstruction or danger to navigation?",
+      "section": "dredging",
+      "name": "navigationalDredgingObstruction",
+      "options": [
+        "/licence-required-no-exemption",
+        "/dredging/navigational-dredging/mpa"
+      ]
+    },
+    "/dredging/navigational-dredging/mpa": {
+    "title": "Will the activity take place in or within 200m of a Marine Protected Area?",
+      "section": "deposit",
+      "name": "navigationalDredgingMpa",
+      "options": [
+        "/dredging/navigational-dredging/mpa-management",
+        "/licence-not-required-exemption-available-article-18A"
+      ]
+    },
+    "/dredging/navigational-dredging/mpa-management": {
+    "title": "Is the activity directly connected with or necessary to the management of the Marine Protected Area?",
+      "section": "deposit",
+      "name": "navigationalDredgingMpaManagement",
+      "options": [
+        "/licence-not-required-exemption-available-article-18A",
+        "/dredging/navigational-dredging/lse"
+      ]
+    },
+    "/dredging/navigational-dredging/lse": {
+      "title": "Is the activity",
+      "section": "deposit",
+      "name": "navigationalDredgingLse",
+      "options": [
+        [
+          "europeanSiteNavigationalDredging",
+          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "ramsarSiteNavigationalDredging",
+          "Likely (either alone or in combination withother plans and projects) to have a significant effect on a Ramsar site",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "mczNavigationalDredging",
+          "Capable of affecting (other than insignificantly), the protected features of a Marine Conservation Zone or any ecological or geomorphological process on which the conservation of any protected feature of an MCZ is (wholly or in Part) dependant?",
+          "/licence-required-no-exemption"
+        ],
+        [
+          "otherSNavigationalDredging",
+          "Unlikely to have any relevant effect on any sites specified above",
+          "/licence-not-required-exemption-available-article-18A"
+        ]
+      ]
+    },
+    "/dredging/shellfish-propogation-cultivation": {
+    "title": "Is the purpose of the activity to enable the moving or removal shellfish within the sea as part of its propagation or cultivation?",
+      "section": "dredging",
+      "name": "shellfishPropogationCultivationPurpose",
+      "options": [
+        "/licence-not-required-exemption-available-article-13",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/coastal-drainage-flood": {
+      "title": "What does your activity relate to?",
+      "section": "dredging",
+      "name": "coastalDrainageFloodActivityType",
+      "options": [
+        [
+          "maintenanceCoastalDrainageFlood",
+          "Maintenance of coast protection, drainage or flood defence works",
+          "/dredging/coastal-drainage-flood/maintenance"
+        ],
+        [
+          "emergencyFloodRisk",
+          "Emergency works in relation to flood or flood risk",
+          "/dredging/coastal-drainage-flood/emergency"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/dredging/coastal-drainage-flood/maintenance": {
+      "title": "Who will carry on the activity",
+      "section": "dredging",
+      "name": "coastalDrainageFloodMaintenceUndertaker",
+      "options": [
+        [
+          "environmentAgency",
+          "The Environment Agency or someone on behalf of the Environment Agency",
+          "/dredging/coastal-drainage-flood/maintenance/EA"
+        ],
+        [
+          "coastProtectionAuthority",
+          "The Coast Protection Authority or someone on behalf of the Coast Protection Authority",
+          "/dredging/coastal-drainage-flood/maintenance/CPA"
+        ],
+        [
+          "other",
+          "Someone else",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/dredging/coastal-drainage-flood/maintenance/EA": {
+      "title": "Will the activity be carried on within the existing boundaries of the works being maintained?",
+      "section": "dredging",
+      "name": "coastalDrainageFloodMaintenceBoundary",
+      "options": [
+        "/dredging/coastal-drainage-flood/maintenance/EA/beach-replenishment",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/coastal-drainage-flood/maintenance/EA/beach-replenishment": {
+      "title": "Does the activity consist of beach replenishment?",
+      "section": "dredging",
+      "name": "maintenanceCoastalProtectionEABeachReplenishment",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-19"
+      ]
+    },
+    "/dredging/coastal-drainage-flood/maintenance/CPA": {
+      "title": "Is the activity for the purpose of maintaining coast protection works?",
+      "section": "dredging",
+      "name": "coastalProtectionMaintenanceCPA",
+      "options": [
+        "/dredging/coastal-drainage-flood/maintenance/EA/beach-replenishment",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/coastal-drainage-flood/maintenance/CPA/beach-replenishment": {
+      "title": "Does the activity consist of beach replenishment?",
+      "section": "dredging",
+      "name": "coastalProtectionMaintenanceCPABeachReplenishment",
+      "options": [
+        "/licence-not-required-exemption-available-article-19",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/coastal-drainage-flood/emergency": {
+      "title": "Will the activity be carried on by or on behalf on the Environment Agency?",
+      "section": "dredging",
+      "name": "floodRiskEmergency",
+      "options": [
+        "/dredging/coastal-drainage-flood/emergency/validation",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/coastal-drainage-flood/emergency/validation": {
+      "title": "Are the circumstances serious, unexpected, and potentially dangerous requiring immediate action in response to either flooding or imminent risk of flooding?",
+      "section": "deposit",
+      "name": "floodRiskValidation",
+      "options": [
+        "/licence-not-required-exemption-available-article-20",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/emergency": {
+      "title": "What does the activity relate to?",
+      "section": "dredging",
+      "name": "emergencyActivityType",
+      "options": [
+        [
+          "floodFloodRisk",
+          "Flood or Flood Risk",
+          "/dredging/emergency/flood-flood-risk"
+        ],
+        [
+          "cablesPipelines",
+          "Cables and pipelines",
+          "/dredging/emergency/cables-pipelines"
+        ],
+        [
+          "coastguardActivites",
+          "Coastguard activities - safety purposes and training",
+          "/dredging/emergency/coastguard"
+        ],
+        [
+          "salvageOperation",
+          "Salvage Operation",
+          "/dredging/emergency/salvage-operation"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/dredging/emergency/flood-flood-risk": {
+    "title": "Will the activity be carried out by or on behalf of the Environment Agency",
+      "section": "dredging",
+      "name": "emergencyFloodFloodRiskUndertaker",
+      "options": [
+        "/dredging/emergency/flood-flood-risk/emergency",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/emergency/flood-flood-risk/emergency": {
+    "title": "Are the circumstances serious, unexpected and potentially dangerous requiring immediate action in response to flood or immient risk of flood?",
+      "section": "dredging",
+      "name": "emergencyFloodFloodRiskValidation",
+      "options": [
+        "/licence-not-required-exemption-available-article-20",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/emergency/cables-pipelines": {
+    "title": "Does the activity relate to the inspection or repair of an exisiting cable or pipeline",
+      "section": "dredging",
+      "name": "emergencyCablesPipelines",
+      "options": [
+        "/dredging/emergency/cables-pipelines/emergency",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/emergency/cables-pipelines/emergency": {
+    "title": "Are the circumstances serious, unexpected and potentially dangerous requiring immediate action?",
+      "section": "dredging",
+      "name": "emergencyCablesPipelinesValidation",
+      "options": [
+        "/dredging/emergency/cables-pipelines/protection",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/emergency/cables-pipelines/protection": {
+    "title": "Will the activity proposed under the exemption include the deposit of rock or other materials for the purpose of providing cable or pipeline protection?",
+      "section": "dredging",
+      "name": "emergencyCablesPipelinesProtection",
+      "options": [
+        "/licence-required-no-exemption",
+        "/dredging/emergency/cables-pipelines/protection/explosives"
+      ]
+    },
+    "/dredging/emergency/cables-pipelines/protection/explosives": {
+    "title": "Does the activity involve the deposit or use of explosives?",
+      "section": "dredging",
+      "name": "emergencyCablesPipelinesExplosives",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-34"
+      ]
+    },
+    "/dredging/emergency/coastguard": {
+    "title": "Will the activity be carried out by or on behalf the Secretary of State for Transport, acting through the Maritime and Coastguard Agency?",
+      "section": "dredging",
+      "name": "emergencyCoastguardUndertaker",
+      "options": [
+        "/dredging/emergency/coastguard/purpose",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/emergency/coastguard/purpose": {
+      "title": "What is the purpose of the activity?",
+      "section": "dredging",
+      "name": "emergencyCoastguardPurpose",
+      "options": [
+        [
+          "securingVesselAircraftMarineStructureSafety",
+          "Securing the safety of a vessel, aircraft or marine structure ",
+          "/licence-not-required-exemption-available-article-32"
+        ],
+        [
+          "savingLife",
+          "Saving life",
+          "/licence-not-required-exemption-available-article-32"
+        ],
+        [
+          "training",
+          "Training for either of the above two purposes",
+          "/licence-not-required-exemption-available-article-32"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/dredging/emergency/salvage-operation": {
+    "title": "Will the activity be carried out in the course of a salvage operation for the purpose of ensuring the safety of a vessel or preventing pollution?",
+      "section": "dredging",
+      "name": "emergencySalvageOperation",
+      "options": [
+        "/licence-not-required-exemption-available-article-9",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/safety-training": {
+      "title": "What does the activity relate to?",
+      "section": "dredging",
+      "name": "safetyTrainingActivityType",
+      "options": [
+        [
+          "coastguardActivites",
+          "Coastguard activities - safety purposes and training",
+          "/dredging/safety-training/coastguard"
+        ],
+        [
+          "salvageOperation",
+          "Salvage Operation",
+          "/dredging/safety-training/salvage-operation"
+        ],
+        [
+          "safetyDirections",
+          "Safety directions under the Merchant Shipping Act 1995",
+          "/dredging/safety-training/safety-directions"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/dredging/safety-training/coastguard": {
+    "title": "Will the activity be carried out by or on behalf the Secretary of State for Transport, acting through the Maritime and Coastguard Agency?",
+      "section": "dredging",
+      "name": "safetyTrainingCoastguardUndertaker",
+      "options": [
+        "/dredging/safety-training/coastguard/purpose",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/safety-training/coastguard/purpose": {
+      "title": "What is the purpose of the activity?",
+      "section": "dredging",
+      "name": "safetyTrainingCoastguardPurpose",
+      "options": [
+        [
+          "securingVesselAircraftMarineStructureSafety",
+          "Securing the safety of a vessel, aircraft or marine structure ",
+          "/licence-not-required-exemption-available-article-32"
+        ],
+        [
+          "savingLife",
+          "Saving life",
+          "/licence-not-required-exemption-available-article-32"
+        ],
+        [
+          "training",
+          "Training for either of the above two purposes",
+          "/licence-not-required-exemption-available-article-32"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/dredging/safety-training/salvage-operation": {
+    "title": "Will the activity be carried out in the course of a salvage operation for the purpose of ensuring the safety of a vessel or preventing pollution?",
+      "section": "dredging",
+      "name": "safetyTrainingSalvageOperation",
+      "options": [
+        "/licence-not-required-exemption-available-article-9",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/dredging/safety-training/safety-directions": {
+      "title": "What is the purpose of the activity",
+      "section": "dredging",
+      "name": "safetyTrainingSafetyDirectionsPurpose",
+      "options": [
+        [
+          "secretaryOfStateSchedule3A",
+          "In exercise of a power under Schedule 3A to the Merchant Shipping Act 1995 (safety directions) by or behalf of the Secretary of State",
+          "/licence-not-required-exemption-available-article-8"
+        ],
+        [
+          "schedule3ACompliance",
+          "Compliance with a direction under Schedule 3A to the Merchant Shipping Act 1995 (safety directions)",
+          "/licence-not-required-exemption-available-article-8"
+        ],
+        [
+          "avoidingInterference",
+          "Avoiding interference with action taken under Schedule 3A to the Merchant Shipping Act 1995 (safety directions)",
+          "/licence-not-required-exemption-available-article-8"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/dredging/miscellaneous": {
+      "title": "Whats is the purpose of your activity?",
+      "section": "dredging",
+      "name": "dredgingMiscellaneousActivityType",
+      "options": [
+        [
+          "deepseaMining",
+          "Licensed deepsea mining",
+          "/dredging/miscellaneous/deepsea-mining"
+        ],
+        [
+          "crossrailAct",
+          "Scheduled works authorised under the Crossrail Act",
+          "/dredging/miscellaneous/crossrail-act"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/dredging/miscellaneous/deepsea-mining": {
+      "title": "Is the activity carried out?",
+      "section": "dredging",
+      "name": "dredgingMiscellaneousDeepseaMiningPurpose",
+      "options": [
+        [
+          "explorationExploitationLicence",
+          "In pursuance of an exploration or exploitation licence issued under the Deep Sea Mining (Temporary Provision) Act 1981",
+          "/licence-not-required-exemption-available-article-30"
+        ],
+        [
+          "reciprocalAuthoriation",
+          "In pursuance of a reciprocal authoriation within the meaning given by section 3(3) of the Deep Sea Mining (Temporary Provision) Act 1981",
+          "/licence-not-required-exemption-available-article-30"
+        ],
+        [
+          "other",
+          "for another reason",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/dredging/miscellaneous/crossrail-act": {
+    "title": "Will the activity be carried out within the limits of deviation for scheduled works in exercise of powers conferred by the Crossrail Act 2008 in relation to those works or any work connected with them?",
+      "section": "dredging",
+      "name": "dredgingMiscellaneousCrossrailAct",
+      "options": [
+        "/licence-not-required-exemption-available-article-29",
         "/licence-required-no-exemption"
       ]
     },
@@ -2230,12 +2717,12 @@
         [
           "inUk",
           "United Kingdom (except Scotland)",
-          "/licence-required-no-exemption"
+          null
         ],
         [
           "inUkMLA",
           "UK marine licensing area",
-          "/licence-required-no-exemption"
+          null
         ],
         [
           "none",

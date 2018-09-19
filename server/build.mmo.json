@@ -2894,7 +2894,7 @@
       "components": [
         {
           "type": "YesNoField",
-          "name": "defenceActivityRestriction",
+          "name": "depsoitMiscellaneousCrossrailAct",
           "title": "Will the activity be carried out within the limits of deviation for scheduled works in exercise of powers conferred by the Crossrail Act 2008 in relation to those works or any work connected with them?"
         }
       ],
@@ -2904,7 +2904,7 @@
         },
         {
           "path": "/licence-required-no-exemption",
-          "if": "defenceActivityRestriction == false"
+          "if": "depsoitMiscellaneousCrossrailAct == false"
         }
       ]
     },
@@ -2999,8 +2999,28 @@
       ],
       "next": [
         {
-          "path": "/dredging/navigational-dredging/undertaker",
+          "path": "/dredging/navigational-dredging",
           "if": "activityType == 'navigationalDredging'"
+        },
+        {
+          "path": "/dredging/shellfish-propogation-cultivation",
+          "if": "activityType == 'shellfish'"
+        },
+        {
+          "path": "/dredging/coastal-drainage-flood",
+          "if": "activityType == 'coastalProtectionDrainageOrFloodDefence'"
+        },
+        {
+          "path": "/dredging/emergency",
+          "if": "activityType == 'emergency'"
+        },
+        {
+          "path": "/dredging/safety-training",
+          "if": "activityType == 'safetyOrTraining'"
+        },
+        {
+          "path": "/dredging/miscellaneous",
+          "if": "activityType == 'miscellaneous'"
         }
       ]
     },
@@ -3066,7 +3086,7 @@
       "components": [
         {
           "type": "YesNoField",
-          "name": "activityMethod",
+          "name": "navigationalDredgingMethod",
           "title": "Will the activity be carried out in accordance with the authorisation?"
         }
       ],
@@ -3076,7 +3096,7 @@
         },
         {
           "path": "/dredging/navigational-dredging/purpose",
-          "if": "activityMethod == false"
+          "if": "navigationalDredgingMethod == false"
         }
       ]
     },
@@ -3086,8 +3106,112 @@
       "components": [
         {
           "type": "YesNoField",
-          "name": "activityPurpose",
+          "name": "navigationalDredgingPurpose",
           "title": "Is the purpose of the activity to enable the continued use of a navigational channel or area of seas by vessels?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/navigational-dredging/maintenance"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "navigationalDredgingPurpose == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/navigational-dredging/maintenance",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "navigationalDredgingMaintenance",
+          "title": "Will the dredging undertaken at a site and at a depth where at least one previous dredging campaign has taken place in the last 10 years?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/navigational-dredging/previous-purpose"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "navigationalDredgingMaintenance == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/navigational-dredging/previous-purpose",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "navigationalDredgingPreviousPurpose",
+          "title": "Was the purpose of the previous dredge to enable the continued use of the area of sea by vessels??"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/navigational-dredging/quantity"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "navigationalDredgingPreviousPurpose == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/navigational-dredging/quantity",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "RadiosField",
+          "name": "authorisationType",
+          "title": "How many cubic meters will be dredged?",
+          "options": {
+            "list": "_41"
+          }
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/navigational-dredging/last-12months",
+          "if": "authorisationType == 'lessThan501'"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "authorisationType == 'moreThan500'"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/navigational-dredging/last-12months",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "navigationalDredgingPreviousLast12Months",
+          "title": "Has any other dredging taken place at the site of the proposed dredge in the previous 12 months?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/navigational-dredging/last-12-quantity"
+        },
+        {
+          "path": "/dredging/navigational-dredging/obstruction",
+          "if": "navigationalDredgingPreviousLast12Months == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/navigational-dredging/last-12-quantity",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "navigationalDredgingPreviousLast12MonthsQuantity",
+          "title": "Does the quantity of material dredged at the site in the previous 12 month combined with the amount proposed to be dredged exceed 1500m3?"
         }
       ],
       "next": [
@@ -3095,8 +3219,736 @@
           "path": "/licence-required-no-exemption"
         },
         {
+          "path": "/dredging/navigational-dredging/obstruction",
+          "if": "navigationalDredgingPreviousLast12MonthsQuantity == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/navigational-dredging/obstruction",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "navigationalDredgingObstruction",
+          "title": "Is the activity one that will cause or be likely to cause obstruction or danger to navigation?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-required-no-exemption"
+        },
+        {
+          "path": "/dredging/navigational-dredging/mpa",
+          "if": "navigationalDredgingObstruction == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/navigational-dredging/mpa",
+      "section": "deposit",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "navigationalDredgingMpa",
+          "title": "Will the activity take place in or within 200m of a Marine Protected Area?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/navigational-dredging/mpa-management"
+        },
+        {
+          "path": "/licence-not-required-exemption-available-article-18A",
+          "if": "navigationalDredgingMpa == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/navigational-dredging/mpa-management",
+      "section": "deposit",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "navigationalDredgingMpaManagement",
+          "title": "Is the activity directly connected with or necessary to the management of the Marine Protected Area?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-not-required-exemption-available-article-18A"
+        },
+        {
+          "path": "/dredging/navigational-dredging/lse",
+          "if": "navigationalDredgingMpaManagement == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/navigational-dredging/lse",
+      "section": "deposit",
+      "components": [
+        {
+          "type": "RadiosField",
+          "name": "navigationalDredgingLse",
+          "title": "Is the activity",
+          "options": {
+            "list": "_42"
+          }
+        }
+      ],
+      "next": [
+        {
           "path": "/licence-required-no-exemption",
-          "if": "activityPurpose == false"
+          "if": "navigationalDredgingLse == 'europeanSiteNavigationalDredging'"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "navigationalDredgingLse == 'ramsarSiteNavigationalDredging'"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "navigationalDredgingLse == 'mczNavigationalDredging'"
+        },
+        {
+          "path": "/licence-not-required-exemption-available-article-18A",
+          "if": "navigationalDredgingLse == 'otherSNavigationalDredging'"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/shellfish-propogation-cultivation",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "shellfishPropogationCultivationPurpose",
+          "title": "Is the purpose of the activity to enable the moving or removal shellfish within the sea as part of its propagation or cultivation?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-not-required-exemption-available-article-13"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "shellfishPropogationCultivationPurpose == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/coastal-drainage-flood",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "RadiosField",
+          "name": "coastalDrainageFloodActivityType",
+          "title": "What does your activity relate to?",
+          "options": {
+            "list": "_43"
+          }
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/coastal-drainage-flood/maintenance",
+          "if": "coastalDrainageFloodActivityType == 'maintenanceCoastalDrainageFlood'"
+        },
+        {
+          "path": "/dredging/coastal-drainage-flood/emergency",
+          "if": "coastalDrainageFloodActivityType == 'emergencyFloodRisk'"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "coastalDrainageFloodActivityType == 'other'"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/coastal-drainage-flood/maintenance",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "RadiosField",
+          "name": "coastalDrainageFloodMaintenceUndertaker",
+          "title": "Who will carry on the activity",
+          "options": {
+            "list": "_44"
+          }
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/coastal-drainage-flood/maintenance/EA",
+          "if": "coastalDrainageFloodMaintenceUndertaker == 'environmentAgency'"
+        },
+        {
+          "path": "/dredging/coastal-drainage-flood/maintenance/CPA",
+          "if": "coastalDrainageFloodMaintenceUndertaker == 'coastProtectionAuthority'"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "coastalDrainageFloodMaintenceUndertaker == 'other'"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/coastal-drainage-flood/maintenance/EA",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "coastalDrainageFloodMaintenceBoundary",
+          "title": "Will the activity be carried on within the existing boundaries of the works being maintained?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/coastal-drainage-flood/maintenance/EA/beach-replenishment"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "coastalDrainageFloodMaintenceBoundary == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/coastal-drainage-flood/maintenance/EA/beach-replenishment",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "maintenanceCoastalProtectionEABeachReplenishment",
+          "title": "Does the activity consist of beach replenishment?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-required-no-exemption"
+        },
+        {
+          "path": "/licence-not-required-exemption-available-article-19",
+          "if": "maintenanceCoastalProtectionEABeachReplenishment == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/coastal-drainage-flood/maintenance/CPA",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "coastalProtectionMaintenanceCPA",
+          "title": "Is the activity for the purpose of maintaining coast protection works?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/coastal-drainage-flood/maintenance/EA/beach-replenishment"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "coastalProtectionMaintenanceCPA == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/coastal-drainage-flood/maintenance/CPA/beach-replenishment",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "coastalProtectionMaintenanceCPABeachReplenishment",
+          "title": "Does the activity consist of beach replenishment?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-not-required-exemption-available-article-19"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "coastalProtectionMaintenanceCPABeachReplenishment == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/coastal-drainage-flood/emergency",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "floodRiskEmergency",
+          "title": "Will the activity be carried on by or on behalf on the Environment Agency?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/coastal-drainage-flood/emergency/validation"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "floodRiskEmergency == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/coastal-drainage-flood/emergency/validation",
+      "section": "deposit",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "floodRiskValidation",
+          "title": "Are the circumstances serious, unexpected, and potentially dangerous requiring immediate action in response to either flooding or imminent risk of flooding?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-not-required-exemption-available-article-20"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "floodRiskValidation == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/emergency",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "RadiosField",
+          "name": "emergencyActivityType",
+          "title": "What does the activity relate to?",
+          "options": {
+            "list": "_45"
+          }
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/emergency/flood-flood-risk",
+          "if": "emergencyActivityType == 'floodFloodRisk'"
+        },
+        {
+          "path": "/dredging/emergency/cables-pipelines",
+          "if": "emergencyActivityType == 'cablesPipelines'"
+        },
+        {
+          "path": "/dredging/emergency/coastguard",
+          "if": "emergencyActivityType == 'coastguardActivites'"
+        },
+        {
+          "path": "/dredging/emergency/salvage-operation",
+          "if": "emergencyActivityType == 'salvageOperation'"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "emergencyActivityType == 'other'"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/emergency/flood-flood-risk",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "emergencyFloodFloodRiskUndertaker",
+          "title": "Will the activity be carried out by or on behalf of the Environment Agency"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/emergency/flood-flood-risk/emergency"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "emergencyFloodFloodRiskUndertaker == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/emergency/flood-flood-risk/emergency",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "emergencyFloodFloodRiskValidation",
+          "title": "Are the circumstances serious, unexpected and potentially dangerous requiring immediate action in response to flood or immient risk of flood?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-not-required-exemption-available-article-20"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "emergencyFloodFloodRiskValidation == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/emergency/cables-pipelines",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "emergencyCablesPipelines",
+          "title": "Does the activity relate to the inspection or repair of an exisiting cable or pipeline"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/emergency/cables-pipelines/emergency"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "emergencyCablesPipelines == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/emergency/cables-pipelines/emergency",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "emergencyCablesPipelinesValidation",
+          "title": "Are the circumstances serious, unexpected and potentially dangerous requiring immediate action?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/emergency/cables-pipelines/protection"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "emergencyCablesPipelinesValidation == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/emergency/cables-pipelines/protection",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "emergencyCablesPipelinesProtection",
+          "title": "Will the activity proposed under the exemption include the deposit of rock or other materials for the purpose of providing cable or pipeline protection?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-required-no-exemption"
+        },
+        {
+          "path": "/dredging/emergency/cables-pipelines/protection/explosives",
+          "if": "emergencyCablesPipelinesProtection == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/emergency/cables-pipelines/protection/explosives",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "emergencyCablesPipelinesExplosives",
+          "title": "Does the activity involve the deposit or use of explosives?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-required-no-exemption"
+        },
+        {
+          "path": "/licence-not-required-exemption-available-article-34",
+          "if": "emergencyCablesPipelinesExplosives == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/emergency/coastguard",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "emergencyCoastguardUndertaker",
+          "title": "Will the activity be carried out by or on behalf the Secretary of State for Transport, acting through the Maritime and Coastguard Agency?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/emergency/coastguard/purpose"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "emergencyCoastguardUndertaker == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/emergency/coastguard/purpose",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "RadiosField",
+          "name": "emergencyCoastguardPurpose",
+          "title": "What is the purpose of the activity?",
+          "options": {
+            "list": "_46"
+          }
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-not-required-exemption-available-article-32",
+          "if": "emergencyCoastguardPurpose == 'securingVesselAircraftMarineStructureSafety'"
+        },
+        {
+          "path": "/licence-not-required-exemption-available-article-32",
+          "if": "emergencyCoastguardPurpose == 'savingLife'"
+        },
+        {
+          "path": "/licence-not-required-exemption-available-article-32",
+          "if": "emergencyCoastguardPurpose == 'training'"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "emergencyCoastguardPurpose == 'other'"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/emergency/salvage-operation",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "emergencySalvageOperation",
+          "title": "Will the activity be carried out in the course of a salvage operation for the purpose of ensuring the safety of a vessel or preventing pollution?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-not-required-exemption-available-article-9"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "emergencySalvageOperation == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/safety-training",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "RadiosField",
+          "name": "safetyTrainingActivityType",
+          "title": "What does the activity relate to?",
+          "options": {
+            "list": "_47"
+          }
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/safety-training/coastguard",
+          "if": "safetyTrainingActivityType == 'coastguardActivites'"
+        },
+        {
+          "path": "/dredging/safety-training/salvage-operation",
+          "if": "safetyTrainingActivityType == 'salvageOperation'"
+        },
+        {
+          "path": "/dredging/safety-training/safety-directions",
+          "if": "safetyTrainingActivityType == 'safetyDirections'"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "safetyTrainingActivityType == 'other'"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/safety-training/coastguard",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "safetyTrainingCoastguardUndertaker",
+          "title": "Will the activity be carried out by or on behalf the Secretary of State for Transport, acting through the Maritime and Coastguard Agency?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/safety-training/coastguard/purpose"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "safetyTrainingCoastguardUndertaker == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/safety-training/coastguard/purpose",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "RadiosField",
+          "name": "safetyTrainingCoastguardPurpose",
+          "title": "What is the purpose of the activity?",
+          "options": {
+            "list": "_48"
+          }
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-not-required-exemption-available-article-32",
+          "if": "safetyTrainingCoastguardPurpose == 'securingVesselAircraftMarineStructureSafety'"
+        },
+        {
+          "path": "/licence-not-required-exemption-available-article-32",
+          "if": "safetyTrainingCoastguardPurpose == 'savingLife'"
+        },
+        {
+          "path": "/licence-not-required-exemption-available-article-32",
+          "if": "safetyTrainingCoastguardPurpose == 'training'"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "safetyTrainingCoastguardPurpose == 'other'"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/safety-training/salvage-operation",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "safetyTrainingSalvageOperation",
+          "title": "Will the activity be carried out in the course of a salvage operation for the purpose of ensuring the safety of a vessel or preventing pollution?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-not-required-exemption-available-article-9"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "safetyTrainingSalvageOperation == false"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/safety-training/safety-directions",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "RadiosField",
+          "name": "safetyTrainingSafetyDirectionsPurpose",
+          "title": "What is the purpose of the activity",
+          "options": {
+            "list": "_49"
+          }
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-not-required-exemption-available-article-8",
+          "if": "safetyTrainingSafetyDirectionsPurpose == 'secretaryOfStateSchedule3A'"
+        },
+        {
+          "path": "/licence-not-required-exemption-available-article-8",
+          "if": "safetyTrainingSafetyDirectionsPurpose == 'schedule3ACompliance'"
+        },
+        {
+          "path": "/licence-not-required-exemption-available-article-8",
+          "if": "safetyTrainingSafetyDirectionsPurpose == 'avoidingInterference'"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "safetyTrainingSafetyDirectionsPurpose == 'other'"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/miscellaneous",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "RadiosField",
+          "name": "dredgingMiscellaneousActivityType",
+          "title": "Whats is the purpose of your activity?",
+          "options": {
+            "list": "_50"
+          }
+        }
+      ],
+      "next": [
+        {
+          "path": "/dredging/miscellaneous/deepsea-mining",
+          "if": "dredgingMiscellaneousActivityType == 'deepseaMining'"
+        },
+        {
+          "path": "/dredging/miscellaneous/crossrail-act",
+          "if": "dredgingMiscellaneousActivityType == 'crossrailAct'"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "dredgingMiscellaneousActivityType == 'other'"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/miscellaneous/deepsea-mining",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "RadiosField",
+          "name": "dredgingMiscellaneousDeepseaMiningPurpose",
+          "title": "Is the activity carried out?",
+          "options": {
+            "list": "_51"
+          }
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-not-required-exemption-available-article-30",
+          "if": "dredgingMiscellaneousDeepseaMiningPurpose == 'explorationExploitationLicence'"
+        },
+        {
+          "path": "/licence-not-required-exemption-available-article-30",
+          "if": "dredgingMiscellaneousDeepseaMiningPurpose == 'reciprocalAuthoriation'"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "dredgingMiscellaneousDeepseaMiningPurpose == 'other'"
+        }
+      ]
+    },
+    {
+      "path": "/dredging/miscellaneous/crossrail-act",
+      "section": "dredging",
+      "components": [
+        {
+          "type": "YesNoField",
+          "name": "dredgingMiscellaneousCrossrailAct",
+          "title": "Will the activity be carried out within the limits of deviation for scheduled works in exercise of powers conferred by the Crossrail Act 2008 in relation to those works or any work connected with them?"
+        }
+      ],
+      "next": [
+        {
+          "path": "/licence-not-required-exemption-available-article-29"
+        },
+        {
+          "path": "/licence-required-no-exemption",
+          "if": "dredgingMiscellaneousCrossrailAct == false"
         }
       ]
     },
@@ -3109,7 +3961,7 @@
           "name": "method",
           "title": "Where will the substance or object be incinerated?",
           "options": {
-            "list": "_41"
+            "list": "_52"
           }
         }
       ],
@@ -3145,7 +3997,7 @@
           "name": "activityTypeElsewhere",
           "title": "What type of activity will be undertaken?",
           "options": {
-            "list": "_42"
+            "list": "_53"
           }
         }
       ],
@@ -3173,7 +4025,7 @@
           "name": "method",
           "title": "How will the deposit be made?",
           "options": {
-            "list": "_43"
+            "list": "_54"
           }
         }
       ],
@@ -3209,19 +4061,11 @@
           "name": "loaded",
           "title": "Where was the substance or object to be deposited loaded?",
           "options": {
-            "list": "_44"
+            "list": "_55"
           }
         }
       ],
       "next": [
-        {
-          "path": "/licence-required-no-exemption",
-          "if": "loaded == 'inUk'"
-        },
-        {
-          "path": "/licence-required-no-exemption",
-          "if": "loaded == 'inUkMLA'"
-        },
         {
           "path": "/licence-not-required",
           "if": "loaded == 'none'"
@@ -3237,7 +4081,7 @@
           "name": "method",
           "title": "Where will the incineration take place?",
           "options": {
-            "list": "_45"
+            "list": "_56"
           }
         }
       ],
@@ -3289,7 +4133,7 @@
           "name": "method",
           "title": "How will the sinking be controlled?",
           "options": {
-            "list": "_46"
+            "list": "_57"
           }
         }
       ],
@@ -3321,7 +4165,7 @@
           "name": "towedOrPropelled",
           "title": "Where will the vessel or container be towed or propelled from, for the purpose its sinking",
           "options": {
-            "list": "_47"
+            "list": "_58"
           }
         }
       ],
@@ -3888,7 +4732,7 @@
           "value": "europeanSiteTemporaryMarkers"
         },
         {
-          "text": "2Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "text": "Likely (either alone or in combination withother plans and projects) to have a significant effect on a Ramsar site",
           "value": "ramsarSiteTemporaryMarkers"
         },
         {
@@ -4040,7 +4884,7 @@
           "value": "europeanSiteScientificEquipment"
         },
         {
-          "text": "2Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "text": "Likely (either alone or in combination withother plans and projects) to have a significant effect on a Ramsar site",
           "value": "ramsarSiteScientificEquipment"
         },
         {
@@ -4063,7 +4907,7 @@
           "value": "europeanSiteTracers"
         },
         {
-          "text": "2Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "text": "Likely (either alone or in combination withother plans and projects) to have a significant effect on a Ramsar site",
           "value": "ramsarSiteTracers"
         },
         {
@@ -4302,16 +5146,8 @@
           "value": "safetyOrTraining"
         },
         {
-          "text": "Prevention of pollution",
-          "value": "pollutionPrevention"
-        },
-        {
-          "text": "Vessels – Rights of foreign vessels and dismantling of ships",
-          "value": "vessels"
-        },
-        {
-          "text": "Deep sea mining or scheduled works under the Crossrail act",
-          "value": "deepSeaOrCrossrail"
+          "text": "Miscellaneous - Licensed deepsea mining and scheduled works under the Crossrail Act",
+          "value": "miscellaneous"
         }
       ]
     },
@@ -4344,6 +5180,239 @@
     },
     {
       "name": "_41",
+      "title": "List for page /dredging/navigational-dredging/quantity",
+      "type": "string",
+      "items": [
+        {
+          "text": "500m3 or less",
+          "value": "lessThan501"
+        },
+        {
+          "text": "501m3 or more",
+          "value": "moreThan500"
+        }
+      ]
+    },
+    {
+      "name": "_42",
+      "title": "List for page /dredging/navigational-dredging/lse",
+      "type": "string",
+      "items": [
+        {
+          "text": "Likely (either alone or in combination withother plans and projects) to have a significant effect on a European site",
+          "value": "europeanSiteNavigationalDredging"
+        },
+        {
+          "text": "Likely (either alone or in combination withother plans and projects) to have a significant effect on a Ramsar site",
+          "value": "ramsarSiteNavigationalDredging"
+        },
+        {
+          "text": "Capable of affecting (other than insignificantly), the protected features of a Marine Conservation Zone or any ecological or geomorphological process on which the conservation of any protected feature of an MCZ is (wholly or in Part) dependant?",
+          "value": "mczNavigationalDredging"
+        },
+        {
+          "text": "Unlikely to have any relevant effect on any sites specified above",
+          "value": "otherSNavigationalDredging"
+        }
+      ]
+    },
+    {
+      "name": "_43",
+      "title": "List for page /dredging/coastal-drainage-flood",
+      "type": "string",
+      "items": [
+        {
+          "text": "Maintenance of coast protection, drainage or flood defence works",
+          "value": "maintenanceCoastalDrainageFlood"
+        },
+        {
+          "text": "Emergency works in relation to flood or flood risk",
+          "value": "emergencyFloodRisk"
+        },
+        {
+          "text": "Other",
+          "value": "other"
+        }
+      ]
+    },
+    {
+      "name": "_44",
+      "title": "List for page /dredging/coastal-drainage-flood/maintenance",
+      "type": "string",
+      "items": [
+        {
+          "text": "The Environment Agency or someone on behalf of the Environment Agency",
+          "value": "environmentAgency"
+        },
+        {
+          "text": "The Coast Protection Authority or someone on behalf of the Coast Protection Authority",
+          "value": "coastProtectionAuthority"
+        },
+        {
+          "text": "Someone else",
+          "value": "other"
+        }
+      ]
+    },
+    {
+      "name": "_45",
+      "title": "List for page /dredging/emergency",
+      "type": "string",
+      "items": [
+        {
+          "text": "Flood or Flood Risk",
+          "value": "floodFloodRisk"
+        },
+        {
+          "text": "Cables and pipelines",
+          "value": "cablesPipelines"
+        },
+        {
+          "text": "Coastguard activities - safety purposes and training",
+          "value": "coastguardActivites"
+        },
+        {
+          "text": "Salvage Operation",
+          "value": "salvageOperation"
+        },
+        {
+          "text": "Other",
+          "value": "other"
+        }
+      ]
+    },
+    {
+      "name": "_46",
+      "title": "List for page /dredging/emergency/coastguard/purpose",
+      "type": "string",
+      "items": [
+        {
+          "text": "Securing the safety of a vessel, aircraft or marine structure ",
+          "value": "securingVesselAircraftMarineStructureSafety"
+        },
+        {
+          "text": "Saving life",
+          "value": "savingLife"
+        },
+        {
+          "text": "Training for either of the above two purposes",
+          "value": "training"
+        },
+        {
+          "text": "Other",
+          "value": "other"
+        }
+      ]
+    },
+    {
+      "name": "_47",
+      "title": "List for page /dredging/safety-training",
+      "type": "string",
+      "items": [
+        {
+          "text": "Coastguard activities - safety purposes and training",
+          "value": "coastguardActivites"
+        },
+        {
+          "text": "Salvage Operation",
+          "value": "salvageOperation"
+        },
+        {
+          "text": "Safety directions under the Merchant Shipping Act 1995",
+          "value": "safetyDirections"
+        },
+        {
+          "text": "Other",
+          "value": "other"
+        }
+      ]
+    },
+    {
+      "name": "_48",
+      "title": "List for page /dredging/safety-training/coastguard/purpose",
+      "type": "string",
+      "items": [
+        {
+          "text": "Securing the safety of a vessel, aircraft or marine structure ",
+          "value": "securingVesselAircraftMarineStructureSafety"
+        },
+        {
+          "text": "Saving life",
+          "value": "savingLife"
+        },
+        {
+          "text": "Training for either of the above two purposes",
+          "value": "training"
+        },
+        {
+          "text": "Other",
+          "value": "other"
+        }
+      ]
+    },
+    {
+      "name": "_49",
+      "title": "List for page /dredging/safety-training/safety-directions",
+      "type": "string",
+      "items": [
+        {
+          "text": "In exercise of a power under Schedule 3A to the Merchant Shipping Act 1995 (safety directions) by or behalf of the Secretary of State",
+          "value": "secretaryOfStateSchedule3A"
+        },
+        {
+          "text": "Compliance with a direction under Schedule 3A to the Merchant Shipping Act 1995 (safety directions)",
+          "value": "schedule3ACompliance"
+        },
+        {
+          "text": "Avoiding interference with action taken under Schedule 3A to the Merchant Shipping Act 1995 (safety directions)",
+          "value": "avoidingInterference"
+        },
+        {
+          "text": "Other",
+          "value": "other"
+        }
+      ]
+    },
+    {
+      "name": "_50",
+      "title": "List for page /dredging/miscellaneous",
+      "type": "string",
+      "items": [
+        {
+          "text": "Licensed deepsea mining",
+          "value": "deepseaMining"
+        },
+        {
+          "text": "Scheduled works authorised under the Crossrail Act",
+          "value": "crossrailAct"
+        },
+        {
+          "text": "Other",
+          "value": "other"
+        }
+      ]
+    },
+    {
+      "name": "_51",
+      "title": "List for page /dredging/miscellaneous/deepsea-mining",
+      "type": "string",
+      "items": [
+        {
+          "text": "In pursuance of an exploration or exploitation licence issued under the Deep Sea Mining (Temporary Provision) Act 1981",
+          "value": "explorationExploitationLicence"
+        },
+        {
+          "text": "In pursuance of a reciprocal authoriation within the meaning given by section 3(3) of the Deep Sea Mining (Temporary Provision) Act 1981",
+          "value": "reciprocalAuthoriation"
+        },
+        {
+          "text": "for another reason",
+          "value": "other"
+        }
+      ]
+    },
+    {
+      "name": "_52",
       "title": "List for page /incineration/method",
       "type": "string",
       "items": [
@@ -4370,7 +5439,7 @@
       ]
     },
     {
-      "name": "_42",
+      "name": "_53",
       "title": "List for page /elsewhere-in-the-world/activity-type",
       "type": "string",
       "items": [
@@ -4393,7 +5462,7 @@
       ]
     },
     {
-      "name": "_43",
+      "name": "_54",
       "title": "List for page /elsewhere-in-the-world/deposit",
       "type": "string",
       "items": [
@@ -4420,7 +5489,7 @@
       ]
     },
     {
-      "name": "_44",
+      "name": "_55",
       "title": "List for page /elsewhere-in-the-world/deposit/where-loaded",
       "type": "string",
       "items": [
@@ -4439,7 +5508,7 @@
       ]
     },
     {
-      "name": "_45",
+      "name": "_56",
       "title": "List for page /elsewhere-in-the-world/incineration",
       "type": "string",
       "items": [
@@ -4462,7 +5531,7 @@
       ]
     },
     {
-      "name": "_46",
+      "name": "_57",
       "title": "List for page /elsewhere-in-the-world/scuttling",
       "type": "string",
       "items": [
@@ -4485,7 +5554,7 @@
       ]
     },
     {
-      "name": "_47",
+      "name": "_58",
       "title": "List for page /elsewhere-in-the-world/scuttling/towed-or-propelled-from-uk",
       "type": "string",
       "items": [
