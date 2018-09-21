@@ -150,6 +150,14 @@
         }
       ]
     },
+    "/licence-not-required-exemption-available-article-18A": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 18A of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
+        }
+      ]
+    },
     "/licence-not-required-exemption-available-article-19": {
       "title": "Licence is not required",
       "components": [
@@ -2062,7 +2070,7 @@
         ]
       ]
     },
-    "/dredging/navigational-dredging/undertaker": {
+    "/dredging/navigational-dredging": {
       "title": "Will the activity be carried on by or on behalf of the harbour authority?",
       "section": "dredging",
       "name": "navigationalDredgingUndertaker",

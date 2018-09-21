@@ -211,6 +211,16 @@
       "title": "Licence is not required"
     },
     {
+      "path": "/licence-not-required-exemption-available-article-18A",
+      "components": [
+        {
+          "type": "Html",
+          "content": "<div class=\"govuk-prose-scope\"><p>Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 18A of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity.<p></div>"
+        }
+      ],
+      "title": "Licence is not required"
+    },
+    {
       "path": "/licence-not-required-exemption-available-article-19",
       "components": [
         {
@@ -3025,7 +3035,7 @@
       ]
     },
     {
-      "path": "/dredging/navigational-dredging/undertaker",
+      "path": "/dredging/navigational-dredging",
       "section": "dredging",
       "components": [
         {
