@@ -286,6 +286,14 @@
         }
       ]
     },
+    "/licence-not-required-exemption-available-article-35": {
+      "title": "Licence is not required",
+      "components": [
+        {
+          "html": "Based on the information provided your activity is one that meets the terms of an marine licence exemption set out in Article 35 of the Marine licence (exempted Activities) Order and a marine licence is therefore not required. This exemption is subject to the requirement that notification of the intention to carry on the activity is given to the MMO prior to the commencement of the activity."
+        }
+      ]
+    },
     "/licence-not-required-exemption-available-article-36": {
       "title": "Licence is not required",
       "components": [
@@ -431,33 +439,269 @@
         [
           "mooringOrNavigation",
           "Mooring or aid to navigation",
-          null
+          "/construction/maintenance/moorings" 
+        ],
+        [
+          "pontoons",
+          "Pontoons",
+          "/construction/maintenance/pontoons"
         ],
         [
           "harbourWorks",
           "Harbour works",
-          null
+          "/construction/maintenance/harbour-works"
         ],
         [
           "coastalProtectionDrainageOrFloodDefence",
           "Coastal Protection, drainage or flood defence",
-          null
-        ],
-        [
-          "cablesAndPipelines",
-          "Cables and pipelines",
-          null
+          "/construction/maintenance/coastal-drainage-flood"
         ],
         [
           "boredTunnel",
           "An activity carried on wholly under the sea in connection with the construction or operation of a bored tunnel",
-          null
+          "/construction/maintenance/bored-tunnel"
         ],
         [
           "other",
           "Other",
-          null
+          "/licence-required-no-exemption"
         ]
+      ]
+    },"/construction/maintenance/moorings": {
+      "title": "What is the purpose of the activity?",
+      "section": "construction",
+      "name": "maintenanceMooringPurpose",
+      "options": [
+        [
+          "pileMooring",
+          "To provide a pile mooring",
+          "/construction/maintenance/moorings/undertaker"
+        ],
+        [
+          "swingingMooring",
+          "To provide a swinging mooring",
+          "/construction/maintenance/moorings/undertaker"
+        ],
+        [
+          "trotMooring",
+          "To provide a trot Mooring",
+          "/construction/maintenance/moorings/undertaker"
+        ],
+        [
+          "aidToNavigation",
+          "To provide a aid to Navigation",
+          "/construction/maintenance/moorings/undertaker"
+        ],
+        [
+          "other",
+          "Something else",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/construction/maintenance/moorings/undertaker": {
+      "title": "Who will carry out the activity?",
+      "section": "construction",
+      "name": "maintenanceMooringUndertaker",
+      "options": [
+        [
+          "harbourAuthority",
+          "A harbour authority or someone on behalf of a harbour authority",
+          "/licence-not-required-exemption-available-article-25"
+        ],
+        [
+          "lighthouseAuthority",
+          "A lighthouse authority or someone on behalf of a harbour authority",
+          "/licence-not-required-exemption-available-article-25"
+        ],
+        [
+          "someoneElse",
+          "Someone else",
+          "/construction/maintenance/moorings/undertaker/consent"
+        ]
+      ]
+    },
+    "/construction/maintenance/moorings/undertaker/consent": {
+    "title": "Does the activity require consent from a harbour authority under local legislation",
+      "section": "construction",
+      "name": "maintenanceMooringConsent",
+      "options": [
+        "/construction/maintenance/moorings/undertaker/approval",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/maintenance/moorings/undertaker/approval": {
+    "title": "Has consent been granted",
+      "section": "construction",
+      "name": "maintenanceMooringApproval",
+      "options": [
+        "/licence-not-required-exemption-available-article-25",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/maintenance/pontoons": {
+    "title": "Is the purpose of the activity to provide a pontoon?",
+      "section": "construction",
+      "name": "maintenancePontoonPurpose",
+      "options": [
+        "/construction/maintenance/pontoons/undertaker",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/maintenance/pontoons/undertaker": {
+      "title": "Who will carry out the activity?",
+      "section": "construction",
+      "name": "maintenancePontoonUndertaker",
+      "options": [
+        [
+          "harbourAuthority",
+          "A harbour authority or someone on behalf of a harbour authority",
+          "/construction/maintenance/pontoons/deck"
+        ],
+        [
+          "someoneElse",
+          "Someone else",
+          "/construction/maintenance/pontoons/consent"
+        ]
+      ]
+    },
+    "/construction/maintenance/pontoons/consent": {
+    "title": "Does the activity require consent from a harbour authority under local legislation",
+      "section": "construction",
+      "name": "maintenancePontoonConsent",
+      "options": [
+        "/construction/maintenance/pontoons/approval",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/maintenance/pontoons/approval": {
+    "title": "Has consent been granted",
+      "section": "construction",
+      "name": "maintenancePontoonApproval",
+      "options": [
+        "/construction/maintenance/pontoons/deck",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/maintenance/pontoons/deck": {
+    "title": "When complete will the deck of the pontoon concerned comprise of an area which exceeds 30m2",
+      "section": "construction",
+      "name": "maintenancePontoonDeck",
+      "options": [
+        "/licence-required-no-exemption",
+        "/construction/maintenance/pontoons/quantity"
+      ]
+    },
+    "/construction/maintenance/pontoons/quantity": {
+    "title": "will more than 10 pontoons be constructed or deposited in the 6 months prior to the commencement of this activity, either by or on behalf of the habour authority or with the consent required from and granted by the harbour authority?",
+      "section": "construction",
+      "name": "maintenancePontoonQuantity",
+      "options": [
+        "/licence-not-required-exemption-available-article-25a-mmo-approval",
+        "/licence-not-required-exemption-available-article-25a"
+      ]
+    },
+    "/construction/maintenance/harbour-works": {
+    "title": "Will the activity be carried out within the existing boundaries of the works being maintained?",
+      "section": "construction",
+      "name": "maintenanceHarbourWorks",
+      "options": [
+        "/construction/maintenance/harbour-works/undertaker",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/maintenance/harbour-works/undertaker": {
+      "title": "Who will carry out the activity?",
+      "section": "construction",
+      "name": "mainteanceHarbourWorksUndertaker",
+      "options": [
+        [
+          "harbourAuthority",
+          "A harbour authority or someone on behalf of a harbour authority",
+          "/licence-not-required-exemption-available-article-23"
+        ],
+        [
+          "someoneElse",
+          "Someone else",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/construction/maintenance/coastal-drainage-flood": {
+      "title": "Who will carry on the activity",
+      "section": "construction",
+      "name": "maintenanceCoastalDrainageFloodUndertaker",
+      "options": [
+        [
+          "environmentAgency",
+          "The Environment Agency or someone on behalf of the Environment Agency",
+          "/construction/maintenance/coastal-drainage-flood/EA"
+        ],
+        [
+          "coastProtectionAuthority",
+          "The Coast Protection Authority or someone on behalf of the Coast Protection Authority",
+          "/construction/maintenance/coastal-drainage-flood/CPA"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/construction/maintenance/coastal-drainage-flood/EA": {
+      "title": "Will the activity be carried on within the existing boundaries of the works being maintained?",
+      "section": "construction",
+      "name": "maintenanceCoastalDrainageFloodEA",
+      "options": [
+        "/construction/maintenance/coastal-drainage-flood/EA/beach-replenishment",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/maintenance/coastal-drainage-flood/EA/beach-replenishment": {
+      "title": "Does the activity consist of beach replenishment?",
+      "section": "construction",
+      "name": "maintenanceCoastaDrainageFloodEABeachReplenishment",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-19"
+      ]
+    },
+    "/construction/maintenance/coastal-drainage-flood/CPA": {
+      "title": "Is the activity for the purpose of maintaining coast protection works?",
+      "section": "construction",
+      "name": "maintenanceCoastalDrainageFloodCPA",
+      "hint": "Carried on within the existing boundaries of the works being maintained.",
+      "options": [
+        "/deposit/maintenance/coastal-drainage-flood/CPA/beach-replenishment",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/maintenance/coastal-drainage-flood/CPA/beach-replenishment": {
+      "title": "Does the activity consist of beach replenishment?",
+      "section": "construction",
+      "name": "maintenanceCoastalDrainageFloodCPABeachReplenishment",
+      "options": [
+        "/licence-not-required-exemption-available-article-19",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/maintenance/bored-tunnel": {
+    "title": "Will the activity be carried on wholly under the sea and relate directly to the construction or operation of a bored tunnel?",
+      "section": "construction",
+      "name": "mainteanceBoredTunnel",
+      "options": [
+        "/construction/maintenance/bored-tunnel/affect",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/maintenance/bored-tunnel/affect": {
+    "title": "Will the activity significantly adversely affect any part of the environment of the UK marine area or the living resources that it supports?",
+      "section": "construction",
+      "name": "maintenanceBoredTunnelAffect",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-35"
       ]
     },
     "/construction/new": {
@@ -467,34 +711,257 @@
       "options": [
         [
           "mooringOrNavigation",
-          "Mooring or aid to navigation",
-          null
+          "Providing a mooring or aid to navigation",
+          "/construction/new/moorings"
         ],
         [
           "pontoon",
-          "A pontoon",
-          null
+          "Providing a pontoon",
+          "/construction/new/pontoons"
         ],
         [
           "floodEmergency",
           "An emergency activity in response to flood or flood risk",
-          null
+          "/construction/new/flood-emergency"
         ],
         [
-          "boredTunnel",
-          "An activity carried on wholly under the sea in connection with the construction or operation of a bored tunnel",
-          null
-        ],
-        [
-          "deepSeaOrCrossrail",
-          "Deep sea mining or scheduled works under the Crossrail Act",
-          null
+          "miscellaneous",
+          "Bored tunnels, deepsea mining and scheduled works under the Crossrail Act",
+          "/construction/new/miscellaneous"
         ],
         [
           "other",
           "Other",
-          null
+         "/licence-required-no-exemption"
         ]
+      ]
+    },
+    "/construction/new/moorings": {
+      "title": "What is the purpose of the activity?",
+      "section": "construction",
+      "name": "newMooringPurpose",
+      "options": [
+        [
+          "pileMooring",
+          "To provide a pile mooring",
+          "/construction/new/moorings/undertaker"
+        ],
+        [
+          "swingingMooring",
+          "To provide a swinging mooring",
+          "/construction/new/moorings/undertaker"
+        ],
+        [
+          "trotMooring",
+          "To provide a trot Mooring",
+          "/construction/new/moorings/undertaker"
+        ],
+        [
+          "aidToNavigation",
+          "To provide a aid to Navigation",
+          "/construction/new/moorings/undertaker"
+        ],
+        [
+          "other",
+          "Something else",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/construction/new/moorings/undertaker": {
+      "title": "Who will carry out the activity?",
+      "section": "construction",
+      "name": "newMooringUndertaker",
+      "options": [
+        [
+          "harbourAuthority",
+          "A harbour authority or someone on behalf of a harbour authority",
+          "/licence-not-required-exemption-available-article-25"
+        ],
+        [
+          "lighthouseAuthority",
+          "A lighthouse authority or someone on behalf of a harbour authority",
+          "/licence-not-required-exemption-available-article-25"
+        ],
+        [
+          "someoneElse",
+          "Someone else",
+          "/construction/new/moorings/undertaker/consent"
+        ]
+      ]
+    },
+    "/construction/new/moorings/undertaker/consent": {
+    "title": "Does the activity require consent from a harbour authority under local legislation",
+      "section": "construction",
+      "name": "newMooringConsent",
+      "options": [
+        "/construction/new/moorings/undertaker/approval",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/new/moorings/undertaker/approval": {
+    "title": "Has consent been granted",
+      "section": "construction",
+      "name": "newMooringApproval",
+      "options": [
+        "/licence-not-required-exemption-available-article-25",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/new/pontoons": {
+    "title": "Is the purpose of the activity to provide a pontoon?",
+      "section": "construction",
+      "name": "newPontoonPurpose",
+      "options": [
+        "/construction/new/pontoons/undertaker",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/new/pontoons/undertaker": {
+      "title": "Who will carry out the activity?",
+      "section": "construction",
+      "name": "newPontoonUndertaker",
+      "options": [
+        [
+          "harbourAuthority",
+          "A harbour authority or someone on behalf of a harbour authority",
+          "/construction/new/pontoons/deck"
+        ],
+        [
+          "someoneElse",
+          "Someone else",
+          "/construction/new/pontoons/consent"
+        ]
+      ]
+    },
+    "/construction/new/pontoons/consent": {
+    "title": "Does the activity require consent from a harbour authority under local legislation",
+      "section": "construction",
+      "name": "newPontoonConsent",
+      "options": [
+        "/deposit/markers-moorings-pontoons-aids-to-navigation/pontoon/approval",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/new/pontoons/approval": {
+    "title": "Has consent been granted",
+      "section": "construction",
+      "name": "newPontoonApproval",
+      "options": [
+        "/construction/new/pontoons/deck",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/new/pontoons/deck": {
+    "title": "When complete will the deck of the pontoon concerned comprise of an area which exceeds 30m2",
+      "section": "construction",
+      "name": "newPontoonDeck",
+      "options": [
+        "/licence-required-no-exemption",
+        "/construction/new/pontoons/quantity"
+      ]
+    },
+    "/construction/new/pontoons/quantity": {
+    "title": "will more than 10 pontoons be constructed or deposited in the 6 months prior to the commencement of this activity, either by or on behalf of the habour authority or with the consent required from and granted by the harbour authority?",
+      "section": "construction",
+      "name": "newPontoonQuantity",
+      "options": [
+        "/licence-not-required-exemption-available-article-25a-mmo-approval",
+        "/licence-not-required-exemption-available-article-25a"
+      ]
+    },
+    "/construction/new/flood-emergency": {
+      "title": "Will the activity be carried on by or on behalf on the Environment Agency?",
+      "section": "construction",
+      "name": "newFloodEmergencyUndertaker",
+      "options": [
+        "/deposit/maintenance/emergency-flood/validation",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/new/flood-emergency/validation": {
+      "title": "Are the circumstances serious, unexpected, and potentially dangerous requiring immediate action in response to either flooding or imminent risk of flooding?",
+      "section": "construction",
+      "name": "newFloodEmergencyValidation",
+      "options": [
+        "/licence-not-required-exemption-available-article-20",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/new/miscellaneous": {
+      "title": "Whats is the purpose of your activity?",
+      "section": "construction",
+      "name": "miscellaneousActivityType",
+      "options": [
+        [
+          "bordedTunnels",
+          "Bored tunnels",
+          "/construction/new/miscellaneous/bored-tunnel"
+        ],
+        [
+          "deepseaMining",
+          "Licensed deepsea mining",
+          "/construction/new/miscellaneous/deepsea-mining"
+        ],
+        [
+          "crossrailAct",
+          "Scheduled works authorised under the Crossrail Act",
+          "/construction/new/miscellaneous/crossrail-act"
+        ],
+        [
+          "other",
+          "Other",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/construction/new/miscellaneous/deepsea-mining": {
+      "title": "Is the activity carried out?",
+      "section": "construction",
+      "name": "newMiscellaneousDeepseaMiningPurpose",
+      "options": [
+        [
+          "explorationExploitationLicence",
+          "In pursuance of an exploration or exploitation licence issued under the Deep Sea Mining (Temporary Provision) Act 1981",
+          "/licence-not-required-exemption-available-article-30"
+        ],
+        [
+          "reciprocalAuthoriation",
+          "In pursuance of a reciprocal authoriation within the meaning given by section 3(3) of the Deep Sea Mining (Temporary Provision) Act 1981",
+          "/licence-not-required-exemption-available-article-30"
+        ],
+        [
+          "other",
+          "for another reason",
+          "/licence-required-no-exemption"
+        ]
+      ]
+    },
+    "/construction/new/miscellaneous/crossrail-act": {
+    "title": "Will the activity be carried out within the limits of deviation for scheduled works in exercise of powers conferred by the Crossrail Act 2008 in relation to those works or any work connected with them?",
+      "section": "construction",
+      "name": "newMiscellaneousCrossrailAct",
+      "options": [
+        "/licence-not-required-exemption-available-article-29",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/new/miscellaneous/bored-tunnel": {
+    "title": "Will the activity be carried on wholly under the sea and relate directly to the construction or operation of a bored tunnel?",
+      "section": "construction",
+      "name": "newMiscellaneousBoredTunnel",
+      "options": [
+        "/construction/new/miscellaneous/bored-tunnel/affect",
+        "/licence-required-no-exemption"
+      ]
+    },
+    "/construction/new/miscellaneous/bored-tunnel/affect": {
+    "title": "Will the activity significantly adversely affect any part of the environment of the UK marine area or the living resources that it supports?",
+      "section": "construction",
+      "name": "newMiscellaneousBoredTunnelAffect",
+      "options": [
+        "/licence-required-no-exemption",
+        "/licence-not-required-exemption-available-article-35"
       ]
     },
     "/deposit/method": {
